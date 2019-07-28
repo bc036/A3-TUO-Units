@@ -1,0 +1,47 @@
+AT Rifleman
+
+
+comment "Exported from Arsenal by bc036";
+
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+comment "Add containers";
+this forceAddUniform "DualTex_Camo_Cyre_Tee";
+for "_i" from 1 to 2 do {this addItemToUniform "FirstAidKit";};
+this addItemToUniform "MiniGrenade";
+this addVest "TAC_FS_FOL_G";
+this addItemToVest "DemoCharge_Remote_Mag";
+for "_i" from 1 to 5 do {this addItemToVest "CUP_30Rnd_556x45_G36";};
+this addBackpack "Specter_IDF_pack";
+this addItemToBackpack "DemoCharge_Remote_Mag";
+for "_i" from 1 to 2 do {this addItemToBackpack "HandGrenade";};
+for "_i" from 1 to 2 do {this addItemToBackpack "SmokeShellGreen";};
+this addHeadgear "rhsusf_opscore_fg";
+this addGoggles "G_Bandanna_oli";
+
+comment "Add weapons";
+this addWeapon "CUP_arifle_XM8_Carbine";
+this addWeapon "CUP_launch_Mk153Mod0";
+this addSecondaryWeaponItem "CUP_optic_SMAW_Scope";
+this addWeapon "CUP_hgun_Glock17";
+this addWeapon "Binocular";
+
+comment "Add items";
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "ItemWatch";
+this linkItem "ItemRadio";
+this linkItem "ItemGPS";
+this linkItem "TAC_SG_SK";
+
+comment "Set identity";
+this setFace "WhiteHead_11";
+this setSpeaker "Male01GRE";

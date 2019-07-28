@@ -1,0 +1,42 @@
+Marksman
+
+
+comment "Exported from Arsenal by bc036";
+
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+comment "Add containers";
+this forceAddUniform "DualTex_Camo_Cyre";
+for "_i" from 1 to 2 do {this addItemToUniform "FirstAidKit";};
+for "_i" from 1 to 4 do {this addItemToUniform "SmokeShellGreen";};
+this addItemToUniform "CUP_17Rnd_9x19_glock17";
+this addVest "TAC_EI_TACV10_CQB_OD";
+for "_i" from 1 to 6 do {this addItemToVest "CUP_30Rnd_556x45_G36";};
+for "_i" from 1 to 2 do {this addItemToVest "DemoCharge_Remote_Mag";};
+this addHeadgear "VSM_Bowman";
+this addGoggles "G_Balaclava_TI_tna_F";
+
+comment "Add weapons";
+this addWeapon "CUP_arifle_xm8_sharpshooter";
+this addWeapon "CUP_hgun_Glock17";
+this addWeapon "Rangefinder";
+
+comment "Add items";
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "ItemWatch";
+this linkItem "ItemRadio";
+this linkItem "ItemGPS";
+this linkItem "TRYK_ESS_BLKBLK_NV";
+
+comment "Set identity";
+this setFace "WhiteHead_11";
+this setSpeaker "Male01GRE";

@@ -1,0 +1,48 @@
+Engineer
+
+
+comment "Exported from Arsenal by bc036";
+
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+comment "Add containers";
+this forceAddUniform "Rainman_Combat_Fatigues_Splinter";
+for "_i" from 1 to 4 do {this addItemToUniform "FirstAidKit";};
+this addItemToUniform "MiniGrenade";
+this addVest "Rainman_PlateCarrier2_Splinter";
+for "_i" from 1 to 2 do {this addItemToVest "DemoCharge_Remote_Mag";};
+for "_i" from 1 to 2 do {this addItemToVest "SmokeShellGreen";};
+for "_i" from 1 to 3 do {this addItemToVest "30Rnd_580x42_Mag_F";};
+this addBackpack "B_AssaultPack_blk";
+this addItemToBackpack "MineDetector";
+this addItemToBackpack "ToolKit";
+for "_i" from 1 to 2 do {this addItemToBackpack "DemoCharge_Remote_Mag";};
+this addHeadgear "Rainman_HelmetB_Light_Splinter";
+this addGoggles "G_Lowprofile";
+
+comment "Add weapons";
+this addWeapon "arifle_CTAR_blk_F";
+this addPrimaryWeaponItem "acc_pointer_IR";
+this addPrimaryWeaponItem "optic_Aco";
+this addWeapon "hgun_Rook40_F";
+this addWeapon "Binocular";
+
+comment "Add items";
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "ItemWatch";
+this linkItem "ItemRadio";
+this linkItem "ItemGPS";
+this linkItem "NVGogglesB_grn_F";
+
+comment "Set identity";
+this setFace "WhiteHead_11";
+this setSpeaker "male01gre";

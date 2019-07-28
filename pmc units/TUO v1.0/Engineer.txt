@@ -1,0 +1,44 @@
+Engineer
+
+
+comment "Exported from Arsenal by bc036";
+
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+comment "Add containers";
+this forceAddUniform "DualTex_Camo_Cyre_GS";
+for "_i" from 1 to 4 do {this addItemToUniform "FirstAidKit";};
+this addItemToUniform "MiniGrenade";
+this addVest "TAC_EI_RRV21_RG";
+for "_i" from 1 to 2 do {this addItemToVest "DemoCharge_Remote_Mag";};
+for "_i" from 1 to 6 do {this addItemToVest "CUP_30Rnd_556x45_G36";};
+for "_i" from 1 to 2 do {this addItemToVest "SmokeShellGreen";};
+this addItemToVest "CUP_17Rnd_9x19_glock17";
+this addBackpack "TAC_BP_KAR_B";
+this addItemToBackpack "MineDetector";
+this addItemToBackpack "ToolKit";
+this addHeadgear "VSM_Bowman_cap_Green";
+this addGoggles "rhs_ess_black";
+
+comment "Add weapons";
+this addWeapon "CUP_arifle_XM8_Compact";
+this addWeapon "CUP_hgun_Glock17";
+this addWeapon "Binocular";
+
+comment "Add items";
+this linkItem "ItemWatch";
+this linkItem "ItemRadio";
+this linkItem "ItemGPS";
+this linkItem "TRYK_Shemagh_G_NV";
+
+comment "Set identity";
+this setFace "WhiteHead_11";
+this setSpeaker "Male01GRE";

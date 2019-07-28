@@ -1,0 +1,44 @@
+Marksman
+
+
+comment "Exported from Arsenal by bc036";
+
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+comment "Add containers";
+this forceAddUniform "TUO_Uniform";
+for "_i" from 1 to 4 do {this addItemToUniform "FirstAidKit";};
+for "_i" from 1 to 2 do {this addItemToUniform "SmokeShellGreen";};
+this addVest "TUO_Vest";
+for "_i" from 1 to 5 do {this addItemToVest "10Rnd_93x64_DMR_05_Mag";};
+for "_i" from 1 to 2 do {this addItemToVest "SmokeShellGreen";};
+for "_i" from 1 to 2 do {this addItemToVest "DemoCharge_Remote_Mag";};
+this addHeadgear "TUO_Helmet";
+this addGoggles "rhs_googles_orange";
+
+comment "Add weapons";
+this addWeapon "srifle_DMR_05_blk_F";
+this addPrimaryWeaponItem "acc_pointer_IR";
+this addPrimaryWeaponItem "optic_Arco_blk_F";
+this addWeapon "hgun_Rook40_F";
+this addWeapon "Rangefinder";
+
+comment "Add items";
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "ItemWatch";
+this linkItem "ItemRadio";
+this linkItem "ItemGPS";
+this linkItem "NVGogglesB_grn_F";
+
+comment "Set identity";
+this setFace "WhiteHead_05";
+this setSpeaker "male03eng";

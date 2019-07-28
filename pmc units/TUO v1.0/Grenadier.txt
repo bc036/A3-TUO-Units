@@ -1,0 +1,45 @@
+Grenadier
+
+
+comment "Exported from Arsenal by bc036";
+
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+comment "Add containers";
+this forceAddUniform "DualTex_Camo_Cyre";
+for "_i" from 1 to 2 do {this addItemToUniform "FirstAidKit";};
+for "_i" from 1 to 2 do {this addItemToUniform "SmokeShellGreen";};
+this addVest "TAC_PBDFG2C_RG_1";
+for "_i" from 1 to 2 do {this addItemToVest "DemoCharge_Remote_Mag";};
+for "_i" from 1 to 5 do {this addItemToVest "CUP_30Rnd_556x45_G36";};
+this addBackpack "TAC_BP_buttB_RG";
+for "_i" from 1 to 10 do {this addItemToBackpack "CUP_1Rnd_HE_M203";};
+for "_i" from 1 to 2 do {this addItemToBackpack "CUP_1Rnd_StarCluster_Green_M203";};
+this addItemToBackpack "CUP_1Rnd_StarFlare_Green_M203";
+for "_i" from 1 to 4 do {this addItemToBackpack "CUP_1Rnd_SmokeGreen_M203";};
+this addHeadgear "rhsusf_opscore_fg";
+this addGoggles "min_rf_scarf_olive";
+
+comment "Add weapons";
+this addWeapon "CUP_arifle_XM8_Carbine_GL";
+this addWeapon "CUP_hgun_Glock17";
+this addWeapon "Binocular";
+
+comment "Add items";
+this linkItem "ItemCompass";
+this linkItem "ItemWatch";
+this linkItem "ItemRadio";
+this linkItem "ItemGPS";
+this linkItem "TRYK_Shemagh_G_NV";
+
+comment "Set identity";
+this setFace "WhiteHead_11";
+this setSpeaker "Male01GRE";

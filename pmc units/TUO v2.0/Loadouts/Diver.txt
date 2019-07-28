@@ -1,0 +1,41 @@
+Diver
+
+
+
+comment "Exported from Arsenal by bc036";
+
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+comment "Add containers";
+this forceAddUniform "U_B_Wetsuit";
+for "_i" from 1 to 4 do {this addItemToUniform "FirstAidKit";};
+for "_i" from 1 to 2 do {this addItemToUniform "SmokeShellGreen";};
+for "_i" from 1 to 5 do {this addItemToUniform "20Rnd_556x45_UW_mag";};
+this addItemToUniform "16Rnd_9x21_Mag";
+this addVest "V_RebreatherB";
+this addGoggles "G_B_Diving";
+
+comment "Add weapons";
+this addWeapon "arifle_SDAR_F";
+this addWeapon "hgun_Rook40_F";
+this addWeapon "Binocular";
+
+comment "Add items";
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "ItemWatch";
+this linkItem "ItemRadio";
+this linkItem "ItemGPS";
+this linkItem "NVGogglesB_blk_F";
+
+comment "Set identity";
+this setFace "WhiteHead_11";
+this setSpeaker "Male01GRE";

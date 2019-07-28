@@ -1,0 +1,45 @@
+Heli Pilot
+
+
+
+comment "Exported from Arsenal by bc036";
+
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+comment "Add containers";
+this forceAddUniform "TRYK_OVERALL_SAGE_BLKboots_nk_blk2";
+for "_i" from 1 to 3 do {this addItemToUniform "FirstAidKit";};
+this addItemToUniform "SmokeShellGreen";
+this addVest "Rainman_PlateCarrier2_Splinter_Urban";
+for "_i" from 1 to 3 do {this addItemToVest "30Rnd_9x21_Mag_SMG_02";};
+this addItemToVest "DemoCharge_Remote_Mag";
+this addBackpack "B_Parachute";
+this addHeadgear "H_PilotHelmetHeli_B";
+this addGoggles "G_Bandanna_blk";
+
+comment "Add weapons";
+this addWeapon "SMG_02_F";
+this addPrimaryWeaponItem "acc_pointer_IR";
+this addPrimaryWeaponItem "optic_Aco";
+this addWeapon "hgun_Rook40_F";
+this addWeapon "Binocular";
+
+comment "Add items";
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "ItemWatch";
+this linkItem "ItemRadio";
+this linkItem "ItemGPS";
+this linkItem "NVGogglesB_blk_F";
+
+comment "Set identity";
+this setFace "WhiteHead_11";
+this setSpeaker "male01gre";

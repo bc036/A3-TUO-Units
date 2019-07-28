@@ -1,0 +1,48 @@
+Operative (AT)
+
+
+comment "Exported from Arsenal by bc036";
+
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+comment "Add containers";
+this forceAddUniform "DualTex_Camo_Cyre_Tee";
+for "_i" from 1 to 4 do {this addItemToUniform "FirstAidKit";};
+this addItemToUniform "30Rnd_580x42_Mag_F";
+this addItemToUniform "MiniGrenade";
+this addItemToUniform "rhs_m136_mag";
+this addVest "TAC_V_tacv10_OD";
+for "_i" from 1 to 5 do {this addItemToVest "30Rnd_580x42_Mag_F";};
+for "_i" from 1 to 2 do {this addItemToVest "SmokeShellGreen";};
+for "_i" from 1 to 2 do {this addItemToVest "HandGrenade";};
+this addItemToVest "rhs_m136_mag";
+this addHeadgear "rhsusf_opscore_fg_pelt";
+this addGoggles "G_Bandanna_oli";
+
+comment "Add weapons";
+this addWeapon "arifle_CTAR_blk_F";
+this addPrimaryWeaponItem "acc_pointer_IR";
+this addPrimaryWeaponItem "optic_Aco";
+this addWeapon "rhs_weap_M136";
+this addWeapon "hgun_Rook40_F";
+this addWeapon "Binocular";
+
+comment "Add items";
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "ItemWatch";
+this linkItem "ItemRadio";
+this linkItem "ItemGPS";
+this linkItem "NVGogglesB_grn_F";
+
+comment "Set identity";
+this setFace "WhiteHead_07";
+this setSpeaker "male11eng";

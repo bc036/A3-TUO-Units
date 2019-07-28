@@ -1,0 +1,41 @@
+Rifelman
+
+
+comment "Exported from Arsenal by bc036";
+
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+comment "Add containers";
+this forceAddUniform "DualTex_Camo_Cyre_TP";
+for "_i" from 1 to 2 do {this addItemToUniform "SmokeShellGreen";};
+this addVest "TAC_V_Sheriff_BA_T2";
+for "_i" from 1 to 4 do {this addItemToVest "FirstAidKit";};
+for "_i" from 1 to 2 do {this addItemToVest "DemoCharge_Remote_Mag";};
+for "_i" from 1 to 8 do {this addItemToVest "CUP_30Rnd_556x45_G36";};
+this addHeadgear "rhsusf_opscore_fg";
+this addGoggles "G_Bandanna_oli";
+
+comment "Add weapons";
+this addWeapon "CUP_arifle_XM8_Carbine";
+this addWeapon "CUP_hgun_Glock17";
+this addWeapon "Binocular";
+
+comment "Add items";
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "ItemWatch";
+this linkItem "ItemRadio";
+this linkItem "ItemGPS";
+this linkItem "TAC_SG_SK";
+
+comment "Set identity";
+this setFace "WhiteHead_11";
+this setSpeaker "Male01GRE";

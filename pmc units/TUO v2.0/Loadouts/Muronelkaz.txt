@@ -1,0 +1,43 @@
+Muronelkaz
+
+
+comment "Exported from Arsenal by bc036";
+
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+comment "Add containers";
+this forceAddUniform "TUO_Uniform_AirCrew";
+this addItemToUniform "FirstAidKit";
+this addItemToUniform "10Rnd_93x64_DMR_05_Mag";
+this addVest "Rainman_PlateCarrier2_Splinter_Urban";
+for "_i" from 1 to 4 do {this addItemToVest "10Rnd_93x64_DMR_05_Mag";};
+this addBackpack "B_AssaultPack_blk";
+this addHeadgear "H_PilotHelmetHeli_B";
+this addGoggles "G_Balaclava_TI_G_blk_F";
+
+comment "Add weapons";
+this addWeapon "srifle_DMR_05_blk_F";
+this addPrimaryWeaponItem "acc_pointer_IR";
+this addPrimaryWeaponItem "optic_Arco_blk_F";
+this addWeapon "hgun_Rook40_F";
+this addWeapon "Rangefinder";
+
+comment "Add items";
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "ItemWatch";
+this linkItem "ItemRadio";
+this linkItem "ItemGPS";
+this linkItem "NVGogglesB_blk_F";
+
+comment "Set identity";
+this setFace "AfricanHead_01";
+this setSpeaker "male08eng";

@@ -1,0 +1,41 @@
+Officer
+
+
+comment "Exported from Arsenal by bc036";
+
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+comment "Add containers";
+this forceAddUniform "DualTex_Camo_Cyre_Tee";
+for "_i" from 1 to 4 do {this addItemToUniform "FirstAidKit";};
+for "_i" from 1 to 2 do {this addItemToUniform "SmokeShellGreen";};
+this addVest "TAC_FS_FOL_B";
+this addItemToVest "DemoCharge_Remote_Mag";
+for "_i" from 1 to 5 do {this addItemToVest "CUP_30Rnd_556x45_G36";};
+this addHeadgear "DualTex_Cap";
+this addGoggles "rhs_googles_black";
+
+comment "Add weapons";
+this addWeapon "CUP_arifle_XM8_Compact";
+this addWeapon "CUP_hgun_Glock17";
+this addWeapon "Laserdesignator_01_khk_F";
+
+comment "Add items";
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "ItemWatch";
+this linkItem "ItemRadio";
+this linkItem "ItemGPS";
+this linkItem "TAC_SG_SK";
+
+comment "Set identity";
+this setFace "WhiteHead_11";
+this setSpeaker "Male01GRE";

@@ -1,0 +1,48 @@
+Grenadier
+
+
+comment "Exported from Arsenal by bc036";
+
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+comment "Add containers";
+this forceAddUniform "Rainman_Combat_Fatigues_Splinter";
+for "_i" from 1 to 4 do {this addItemToUniform "FirstAidKit";};
+for "_i" from 1 to 2 do {this addItemToUniform "SmokeShellGreen";};
+this addItemToUniform "30Rnd_9x21_Mag";
+this addVest "Rainman_PlateCarrier2_Splinter";
+for "_i" from 1 to 2 do {this addItemToVest "DemoCharge_Remote_Mag";};
+for "_i" from 1 to 5 do {this addItemToVest "30Rnd_580x42_Mag_F";};
+this addBackpack "TAC_BP_buttB_RG";
+for "_i" from 1 to 10 do {this addItemToBackpack "1Rnd_HE_Grenade_shell";};
+for "_i" from 1 to 4 do {this addItemToBackpack "UGL_FlareGreen_F";};
+for "_i" from 1 to 4 do {this addItemToBackpack "1Rnd_SmokeGreen_Grenade_shell";};
+this addHeadgear "Rainman_HelmetB_Light_Splinter";
+this addGoggles "G_Combat_Goggles_tna_F";
+
+comment "Add weapons";
+this addWeapon "arifle_CTAR_GL_blk_F";
+this addPrimaryWeaponItem "acc_pointer_IR";
+this addPrimaryWeaponItem "optic_Aco";
+this addWeapon "hgun_Rook40_F";
+this addWeapon "Binocular";
+
+comment "Add items";
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "ItemWatch";
+this linkItem "ItemRadio";
+this linkItem "ItemGPS";
+this linkItem "NVGogglesB_grn_F";
+
+comment "Set identity";
+this setFace "WhiteHead_11";
+this setSpeaker "Male01GRE";
