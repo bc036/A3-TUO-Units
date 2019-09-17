@@ -26,7 +26,7 @@
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tuo_units\Data\TUO Uniform\Suit\tuo_uniform_tropic_test.paa"
+			"tuo_units\Data\TUO Uniform\Suit\Tex\tuo_uniform_test.paa"
 		};
 		class ItemInfo: UniformItem
 		{
