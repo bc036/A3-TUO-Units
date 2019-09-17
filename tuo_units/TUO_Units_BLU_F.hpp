@@ -1,11 +1,15 @@
 class B_Soldier_base_F;
-class TUO_Soldier_base_F:B_Soldier_base_F
+class B_TUO_Soldier_base_F:B_Soldier_base_F
 	{
 		author="bc036,Muronelkaz";
 		_generalMacro="TUO_Soldier_base";
+		editorPreview="\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_V_Soldier_TL_hex_F.jpg";
+		cost=250000;
 		side=1;
+		scope=2;
+		scopeArsenal = 2;
+		scopeCurator=2;
 		faction="TUO_BLU_F";
-		genericNames="TUOBase";
 		identityTypes[]=
 		{
 			"LanguageENG_F",
@@ -13,7 +17,7 @@ class TUO_Soldier_base_F:B_Soldier_base_F
 			"G_NATO_default"
 		};
 		editorSubcategory="EdSubcat_Personnel";
-		displayName="";
+		displayName="TUO Base";
 		icon="iconMan";
 		picture = "";
 		vehicleClass="TUO";
@@ -27,9 +31,6 @@ class TUO_Soldier_base_F:B_Soldier_base_F
 		canDeactivateMines = 0; 
 		engineer = 0;
 		attendant = 0;
-		scope=0;
-		scopeCurator = 0;
-		scopeArsenal = 0;
 		model="\a3\characters_f_exp\opfor\o_viper.p3d";
 		modelSides[]={1,2,3};
 		nakedUniform="U_BasicBody";
@@ -238,5 +239,17 @@ class TUO_Soldier_base_F:B_Soldier_base_F
 		{
 			"TUO_Helmet_Tropic",
 			common
+		};
+	};
+class O_V_Soldier_Viper_hex_F;
+class TUO_Test:O_V_Soldier_Viper_hex_F
+	{
+		side=1;
+		faction="TUO_BLU_F";
+		identityTypes[]=
+		{
+			"LanguageENG_F",
+			"Head_NATO",
+			"G_NATO_default"
 		};
 	};

@@ -1,4 +1,4 @@
-class arifle_MSBS65_F;
+	class arifle_MSBS65_F;
 	class TUO_Promit:arifle_MSBS65_F
 	{
 		scope=3;

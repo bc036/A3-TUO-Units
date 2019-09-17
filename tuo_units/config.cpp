@@ -2,12 +2,13 @@ class CfgPatches
 {
 	class PMC_TUO
 	{
-		Author[] = {"bc036, Muronelkaz"};
-		name = "Trans-Universe Operations";
+		Author[]={"bc036, Muronelkaz"};
+		name ="Trans-Universe Operations";
 		units[] = 
 		{
-			"TUO_soldier_base_blufor",
-			"TUO_Backpack_Tropic"
+			"B_TUO_Soldier_base_F",
+			"TUO_Backpack_Tropic",
+			"TUO_Test"
 		};
 		weapons[] = 
 		{
