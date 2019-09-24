@@ -194,7 +194,7 @@ class B_TUO_Soldier_base_F:B_Soldier_base_F
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tuo_units\Data\TUO Uniform\Suit\Tex\tuo_uniform_test.paa"
+			"tuo_units\Data\TUO Uniform\Suit\Tex\tuo_uniform_tropic.paa"
 		};
 		weapons[]=
 		{
