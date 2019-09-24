@@ -212,13 +212,13 @@ class B_TUO_Soldier_base_F:B_Soldier_base_F
 		};
 		magazines[]=
 		{
-			"30Rnd_65x39_caseless_green",
+			"30Rnd_65x39_caseless_msbs_mag",
 			"30Rnd_9x21_Mag",
 			mag_2(Chemlight_red)
 		};
 		respawnMagazines[]=
 		{
-			"30Rnd_65x39_caseless_green",
+			"30Rnd_65x39_caseless_msbs_mag",
 			"30Rnd_9x21_Mag",
 			mag_2(Chemlight_red)
 		};
@@ -233,23 +233,13 @@ class B_TUO_Soldier_base_F:B_Soldier_base_F
 		linkedItems[]=
 		{
 			"TUO_Helmet_Tropic",
+			"TUO_Diving_Contacts",
 			common
 		};
 		respawnLinkedItems[]=
 		{
 			"TUO_Helmet_Tropic",
+			"TUO_Diving_Contacts",
 			common
-		};
-	};
-class O_V_Soldier_Viper_hex_F;
-class TUO_Test:O_V_Soldier_Viper_hex_F
-	{
-		side=1;
-		faction="TUO_BLU_F";
-		identityTypes[]=
-		{
-			"LanguageENG_F",
-			"Head_NATO",
-			"G_NATO_default"
 		};
 	};

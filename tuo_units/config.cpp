@@ -2,31 +2,30 @@ class CfgPatches
 {
 	class PMC_TUO
 	{
-		Author[]={"bc036, Muronelkaz"};
-		name ="Trans-Universe Operations";
-		units[] = 
+		author[]={"bc036"};
+		name="Trans-Universe Operations";
+		units[]= 
 		{
 			"B_TUO_Soldier_base_F",
 			"TUO_Backpack_Tropic",
-			"TUO_Test"
 		};
-		weapons[] = 
+		weapons[]= 
 		{
 			"TUO_Helmet_Tropic",
 			"TUO_Uniform_Tropic",
 			"TUO_Vest_Tropic",
 			"TUO_Promit",
-			"TUO_Promit_snds"
+			"TUO_Promit_snds",
 		};
 		version=2.6;
-		requiredVersion = 2.6;
-		requiredAddons[] = 
+		requiredVersion=2.6;
+		requiredAddons[]= 
 		{
 			"A3_Characters_F",
 			"A3_Characters_F_Common",
-			"A3_Characters_F_Exp_Headgear";
-			"A3_Characters_F_Exp";
-			"A3_Characters_F_BLUFOR"
+			"A3_Characters_F_Exp_Headgear",
+			"A3_Characters_F_Exp",
+			"A3_Characters_F_BLUFOR",
 		};
 	};
 };
@@ -60,6 +59,7 @@ class CfgFactionClasses
 	{
 		displayName = "TUO";
 		icon = "\tuo_units\Data\tuo_logo.paa";
+		flag ="\tuo_units\Data\tuo_logo.paa";
 		priority = 1;
 		side = 1; //OPF_F=0, BLU_F=1, IND_F=2
 	};
@@ -101,6 +101,28 @@ class CfgVehicles
 	//#include "TUO_Land_BLU_F.hpp"
 	//#include "TUO_Boats_BLU_F.hpp"
 	//#include "TUO_Autonomous_BLU_F.hpp"
+};
+
+class CfgGlasses
+{
+	class G_Diving;
+	class TUO_Diving_Contacts:G_Diving
+	{
+		displayname="Diving Contacts";
+		model="tuo_units\Data\TUO Uniform\Headgear\null.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"tuo_units\Data\TUO Uniform\Headgear\null_CA.paa"
+		};
+		identityTypes[]={};
+		mode=1;
+		mass=3;
+		scope=2;
+	};
 };
 
 class CfgGroups
