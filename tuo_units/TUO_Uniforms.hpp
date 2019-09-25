@@ -13,7 +13,7 @@
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tuo_units\Data\TUO Uniform\Headgear\Tex\tuo_helmet_tropic_test.paa"
+			"tuo_units\Data\TUO Uniform\Headgear\Tex\tuo_helmet_tropic.paa"
 		};
 		class ItemInfo: HeadgearItem
 		{
