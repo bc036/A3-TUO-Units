@@ -6,9 +6,9 @@ class B_TUO_Soldier_base_F:B_Soldier_base_F
 		editorPreview="\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_V_Soldier_TL_hex_F.jpg";
 		cost=250000;
 		side=1;
-		scope=2;
-		scopeArsenal = 2;
-		scopeCurator=2;
+		scope=1;
+		scopeArsenal=1;
+		scopeCurator=1;
 		faction="TUO_BLU_F";
 		identityTypes[]=
 		{
@@ -198,48 +198,48 @@ class B_TUO_Soldier_base_F:B_Soldier_base_F
 		};
 		weapons[]=
 		{
-			"TUO_Promit_snds",
-			"hgun_Rook40_snds_F",
-			"Throw",
-			"Put"
+			TUO_Promit_snds,
+			Throw,
+			Put,
+			Laserdesignator_03,
 		};
 		respawnWeapons[]=
 		{
-			"TUO_Promit_snds",
-			"hgun_Rook40_snds_F",
-			"Throw",
-			"Put"
+			TUO_Promit_snds,
+			Throw,
+			Put,
+			Laserdesignator_03,
 		};
 		magazines[]=
 		{
-			"30Rnd_65x39_caseless_msbs_mag",
-			"30Rnd_9x21_Mag",
-			mag_2(Chemlight_red)
+			30Rnd_65x39_caseless_msbs_mag,
+			Laserbatteries,
 		};
 		respawnMagazines[]=
 		{
-			"30Rnd_65x39_caseless_msbs_mag",
-			"30Rnd_9x21_Mag",
-			mag_2(Chemlight_red)
+			30Rnd_65x39_caseless_msbs_mag,
+			Laserbatteries,
 		};
-		items[]=
-		{
-			mag_4(FirstAidKit)
-		};
-		respawnItems[]=
-		{
-			mag_4(FirstAidKit)
-		};
+		items[]={};
+		respawnItems[]={};
 		linkedItems[]=
 		{
-			"TUO_Helmet_Tropic",
-			"TUO_Diving_Contacts",
+			TUO_Helmet_Tropic,
+			TUO_Diving_Contacts,
 			common
 		};
 		respawnLinkedItems[]=
 		{
-			"TUO_Helmet_Tropic",
-			"TUO_Diving_Contacts",
+			TUO_Helmet_Tropic,
+			TUO_Diving_Contacts,
 			common
 		};
+	};
+	class B_TUO_Operative_F:B_TUO_Soldier_base_F
+	{
+		scope=2;
+		scopeArsenal=2;
+		scopeCurator=2;
+		displayName="TUO Operative";
+		backpack="TUO_Backpack_Tropic_Operative";
 	};

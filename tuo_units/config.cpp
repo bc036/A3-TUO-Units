@@ -7,7 +7,9 @@ class CfgPatches
 		units[]= 
 		{
 			"B_TUO_Soldier_base_F",
+			"B_TUO_Operative_F",
 			"TUO_Backpack_Tropic",
+			"TUO_Backpack_Tropic_Operative",
 		};
 		weapons[]= 
 		{
@@ -26,6 +28,8 @@ class CfgPatches
 			"A3_Characters_F_Exp_Headgear",
 			"A3_Characters_F_Exp",
 			"A3_Characters_F_BLUFOR",
+			"A3_Data_F_Exp",
+			"A3_Weapons_F",
 		};
 	};
 };
@@ -89,12 +93,48 @@ class CfgVehicles
 	class B_ViperLightHarness_ghex_F;
 	class TUO_Backpack_Tropic:B_ViperLightHarness_ghex_F
 	{
-		scope=2;
+		scope=2; //private=0, protected=1, public=2
 		scopeCurator=2;
 		displayName="TUO Backpack Tropic";
 		modelSides[] = {0,1,2,3};
+		hiddenSelectionsTextures[]=
+		{
+			"\tuo_units\Data\TUO Uniform\Backpack\Tex\tuo_backpack_tropic.paa"
+		};
+		maximumLoad=260;
+		mass=45;
 	};
-	
+	class TUO_Backpack_Tropic_Operative:TUO_Backpack_Tropic
+	{
+		scope=1;
+		scopeCurator=1;
+		class TransportMagazines
+		{
+			class _xx_30Rnd_65x39_caseless_msbs_mag
+			{
+				magazine="30Rnd_65x39_caseless_msbs_mag";
+				count=4;
+			};
+			class _xx_Chemlight_red
+			{
+				magazine="Chemlight_red";
+				count=2;
+			};
+			class _xx_SmokeShellGreen
+			{
+				magazine="SmokeShellGreen";
+				count=4;
+			};
+		};
+		class TransportItems
+		{
+			class _xx_FirstAidKit
+			{
+				name="FirstAidKit";
+				count=4;
+			};
+		};		
+	};
 	#include "TUO_Units_BLU_F.hpp"
 	//#include "TUO_Statics_BLU_F.hpp"
 	//#include "TUO_Air_BLU_F.hpp"
@@ -110,6 +150,7 @@ class CfgGlasses
 	{
 		author="bc036";
 		displayname="Diving Contacts";
+		modelSides[] = {0,1,2,3};
 		model="tuo_units\Data\TUO Uniform\Headgear\null.p3d";
 		hiddenSelections[]=
 		{
