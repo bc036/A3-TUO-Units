@@ -2,7 +2,7 @@ class CfgPatches
 {
 	class PMC_TUO
 	{
-		author[]={"bc036"};
+		author="bc036";
 		name="Trans-Universe Operations";
 		units[]= 
 		{
@@ -108,6 +108,7 @@ class CfgGlasses
 	class G_Diving;
 	class TUO_Diving_Contacts:G_Diving
 	{
+		author="bc036";
 		displayname="Diving Contacts";
 		model="tuo_units\Data\TUO Uniform\Headgear\null.p3d";
 		hiddenSelections[]=
