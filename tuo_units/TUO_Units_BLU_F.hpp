@@ -198,14 +198,14 @@ class B_TUO_Soldier_base_F:B_Soldier_base_F
 		};
 		weapons[]=
 		{
-			TUO_Promit_snds,
+			TUO_Promet_snds,
 			Throw,
 			Put,
 			Laserdesignator_03,
 		};
 		respawnWeapons[]=
 		{
-			TUO_Promit_snds,
+			TUO_Promet_snds,
 			Throw,
 			Put,
 			Laserdesignator_03,

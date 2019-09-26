@@ -17,8 +17,9 @@ class CfgPatches
 			"TUO_Helmet_Tropic",
 			"TUO_Uniform_Tropic",
 			"TUO_Vest_Tropic",
-			"TUO_Promit",
-			"TUO_Promit_snds",
+			"TUO_Rebreather_Module",
+			"TUO_Promet",
+			"TUO_Promet_snds",
 		};
 		version=0.2;
 		requiredVersion=0.2;
@@ -106,7 +107,7 @@ class CfgGlasses
 	class TUO_Diving_Contacts:G_Diving
 	{
 		author="bc036";
-		displayname="Diving Contacts";
+		displayname="TUO Diving Contacts";
 		modelSides[] = {0,1,2,3};
 		model="tuo_units\Data\TUO Uniform\null.p3d";
 		hiddenSelections[]=

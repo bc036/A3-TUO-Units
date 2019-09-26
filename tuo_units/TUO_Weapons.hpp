@@ -1,5 +1,5 @@
 	class arifle_MSBS65_F;
-	class TUO_Promit:arifle_MSBS65_F
+	class TUO_Promet:arifle_MSBS65_F
 	{
 		scope=1;
 		class LinkedItems
@@ -16,7 +16,7 @@
 			};
 		};
 	};
-	class TUO_Promit_snds:TUO_Promit
+	class TUO_Promet_snds:TUO_Promet
 	{
 		class LinkedItems
 		{
@@ -38,7 +38,7 @@
 		};
 	};
 	class arifle_MSBS65_sand_F;
-	class TUO_Promit_Arid:arifle_MSBS65_sand_F
+	class TUO_Promet_Arid:arifle_MSBS65_sand_F
 	{
 		scope=1;
 		class LinkedItems
@@ -55,7 +55,7 @@
 			};
 		};
 	};
-	class TUO_Promit_Arid_snds:TUO_Promit_Arid
+	class TUO_Promet_Arid_snds:TUO_Promet_Arid
 	{
 		class LinkedItems
 		{
