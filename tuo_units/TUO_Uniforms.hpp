@@ -1,5 +1,6 @@
 	class HeadgearItem;
 	class UniformItem;
+	class VestItem;
 	class H_HelmetO_ViperSP_ghex_F;
 	class TUO_Helmet_Tropic:H_HelmetO_ViperSP_ghex_F
 	{
@@ -52,7 +53,7 @@
 		scopeCurator=2;
 		displayName="TUO Uniform Tropic";
 		modelSides[] = {0,1,2,3};
-		chiddenSelections[]=
+		hiddenSelections[]=
 		{
 			"camo"
 		};
@@ -75,4 +76,30 @@
 		scopeCurator=2;
 		displayName="TUO Vest Tropic";
 		modelSides[] = {0,1,2,3};
+	};
+	class V_RebreatherB;
+	class TUO_Rebreather_Module:V_RebreatherB
+	{
+		author="bc036";
+		scope=2;
+		scopeCurator=2;
+		displayName="TUO Rebreather Module";
+		picture="\A3\characters_f\Data\UI\icon_V_RebreatherB_CA.paa";
+		model="tuo_units\Data\TUO Uniform\null.p3d";
+		modelSides[] = {0,1,2,3};
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"tuo_units\Data\TUO Uniform\null_CA.paa"
+		};
+		class ItemInfo: VestItem
+		{
+			uniformModel="tuo_units\Data\TUO Uniform\null.p3d";
+			containerClass="Supply0";
+			mass=5;
+			vestType="Rebreather";
+		};
 	};

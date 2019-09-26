@@ -226,12 +226,14 @@ class B_TUO_Soldier_base_F:B_Soldier_base_F
 		{
 			TUO_Helmet_Tropic,
 			TUO_Diving_Contacts,
+			TUO_Rebreather_Module,
 			common
 		};
 		respawnLinkedItems[]=
 		{
 			TUO_Helmet_Tropic,
 			TUO_Diving_Contacts,
+			TUO_Rebreather_Module,
 			common
 		};
 	};
@@ -241,5 +243,5 @@ class B_TUO_Soldier_base_F:B_Soldier_base_F
 		scopeArsenal=2;
 		scopeCurator=2;
 		displayName="TUO Operative";
-		backpack="TUO_Backpack_Tropic_Operative";
+		backpack="TUO_Backpack_Operative";
 	};
