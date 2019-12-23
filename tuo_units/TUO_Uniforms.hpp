@@ -4,10 +4,10 @@
 	class H_HelmetO_ViperSP_ghex_F;
 	class TUO_Helmet_Tropic:H_HelmetO_ViperSP_ghex_F
 	{
-		scope=2;
-		scopeCurator=2;
+		scope=2; //private=0, protected=1, public=2
+		scopeCurator=2; //private=0, protected=1, public=2
 		displayName="TUO Helmet Tropic";
-		modelSides[] = {0,1,2,3};
+		modelSides[] = {0,1,2,3}; //OPF_F=0, BLU_F=1, IND_F=2
 		hiddenSelections[]=
 		{
 			"camo"
@@ -24,7 +24,7 @@
 			{
 				"camo"
 			};
-			modelSides[]={0,1,2,3};
+			modelSides[]={0,1,2,3}; //OPF_F=0, BLU_F=1, IND_F=2
 			class HitpointsProtectionInfo
 			{
 				class Head
@@ -49,10 +49,10 @@
 	class U_O_V_Soldier_Viper_F;
 	class TUO_Uniform_Tropic:U_O_V_Soldier_Viper_F
 	{
-		scope=2;
-		scopeCurator=2;
+		scope=2; //private=0, protected=1, public=2
+		scopeCurator=2; //private=0, protected=1, public=2
 		displayName="TUO Uniform Tropic";
-		modelSides[] = {0,1,2,3};
+		modelSides[] = {0,1,2,3}; //OPF_F=0, BLU_F=1, IND_F=2
 		hiddenSelections[]=
 		{
 			"camo"
@@ -72,21 +72,21 @@
 	class V_PlateCarrier1_rgr;
 	class TUO_Vest_Tropic:V_PlateCarrier1_rgr
 	{
-		scope=2;
-		scopeCurator=2;
+		scope=2; //private=0, protected=1, public=2
+		scopeCurator=2; //private=0, protected=1, public=2
 		displayName="TUO Vest Tropic";
-		modelSides[] = {0,1,2,3};
+		modelSides[] = {0,1,2,3}; //OPF_F=0, BLU_F=1, IND_F=2
 	};
 	class V_RebreatherB;
 	class TUO_Rebreather_Module:V_RebreatherB
 	{
 		author="bc036";
-		scope=2;
-		scopeCurator=2;
+		scope=2; //private=0, protected=1, public=2
+		scopeCurator=2; //private=0, protected=1, public=2
 		displayName="TUO Rebreather Module";
 		picture="\A3\characters_f\Data\UI\icon_V_RebreatherB_CA.paa";
 		model="tuo_units\Data\TUO Uniform\null.p3d";
-		modelSides[] = {0,1,2,3};
+		modelSides[] = {0,1,2,3}; //OPF_F=0, BLU_F=1, IND_F=2
 		hiddenSelections[]=
 		{
 			"camo"

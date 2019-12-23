@@ -5,10 +5,10 @@ class B_TUO_Soldier_base_F:B_Soldier_base_F
 		_generalMacro="TUO_Soldier_base";
 		editorPreview="\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_V_Soldier_TL_hex_F.jpg";
 		cost=250000;
-		side=1;
-		scope=1;
-		scopeArsenal=1;
-		scopeCurator=1;
+		side=1; //OPF_F=0, BLU_F=1, IND_F=2
+		scope=1; //private=0, protected=1, public=2
+		scopeArsenal=1; //private=0, protected=1, public=2
+		scopeCurator=1; //private=0, protected=1, public=2
 		faction="TUO_BLU_F";
 		identityTypes[]=
 		{
@@ -32,7 +32,7 @@ class B_TUO_Soldier_base_F:B_Soldier_base_F
 		engineer = 0;
 		attendant = 0;
 		model="\a3\characters_f_exp\opfor\o_viper.p3d";
-		modelSides[]={1,2,3};
+		modelSides[]={1,2,3}; //OPF_F=0, BLU_F=1, IND_F=2
 		nakedUniform="U_BasicBody";
 		uniformClass="TUO_Uniform_Tropic";
 		backpack="TUO_Backpack_Tropic";
@@ -239,9 +239,9 @@ class B_TUO_Soldier_base_F:B_Soldier_base_F
 	};
 	class B_TUO_Operative_F:B_TUO_Soldier_base_F
 	{
-		scope=2;
-		scopeArsenal=2;
-		scopeCurator=2;
+		scope=2; //private=0, protected=1, public=2
+		scopeArsenal=2; //private=0, protected=1, public=2
+		scopeCurator=2; //private=0, protected=1, public=2
 		displayName="TUO Operative";
 		backpack="TUO_Backpack_Operative";
 	};

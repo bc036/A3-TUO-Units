@@ -2,8 +2,8 @@
 	class TUO_Extra_Pockets:Bag_Base
 	{
 		author="bc036";
-		scope=2;
-		scopeCurator=2;
+		scope=2; //private=0, protected=1, public=2
+		scopeCurator=2; //private=0, protected=1, public=2
 		displayName="TUO Extra Pockets";
 		model="tuo_units\Data\TUO Uniform\null.p3d";
 		editorCategory="EdCat_Equipment";
@@ -23,9 +23,9 @@
 	class TUO_Backpack_Tropic:B_ViperLightHarness_ghex_F
 	{
 		scope=2; //private=0, protected=1, public=2
-		scopeCurator=2;
+		scopeCurator=2; //private=0, protected=1, public=2
 		displayName="TUO Backpack Tropic";
-		modelSides[] = {0,1,2,3};
+		modelSides[] = {0,1,2,3}; //OPF_F=0, BLU_F=1, IND_F=2
 		hiddenSelectionsTextures[]=
 		{
 			"\tuo_units\Data\TUO Uniform\Backpack\Tex\tuo_backpack_tropic.paa"
@@ -35,8 +35,8 @@
 	};
 	class TUO_Backpack_Operative:TUO_Extra_Pockets
 	{
-		scope=1;
-		scopeCurator=1;
+		scope=1; //private=0, protected=1, public=2
+		scopeCurator=1; //private=0, protected=1, public=2
 		class TransportMagazines
 		{
 			class _xx_30Rnd_65x39_caseless_msbs_mag
