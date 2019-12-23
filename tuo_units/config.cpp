@@ -6,8 +6,10 @@ class CfgPatches
 		name="Trans-Universe Operations";
 		units[]= 
 		{
+			"O_TUO_Operative_F",
 			"B_TUO_Soldier_base_F",
 			"B_TUO_Operative_F",
+			"I_TUO_Operative_F",
 			"TUO_Backpack_Tropic",
 			"TUO_Backpack_Operative",
 			"TUO_Extra_Pockets",
@@ -21,8 +23,8 @@ class CfgPatches
 			"TUO_Promet",
 			"TUO_Promet_snds",
 		};
-		version=0.2;
-		requiredVersion=0.2;
+		version=0.21;
+		requiredVersion=0.21;
 		requiredAddons[]= 
 		{
 			"A3_Characters_F",
@@ -42,7 +44,7 @@ class CfgMods
 	{
 		dir = "@TUO Units";
 		name = "TUO";
-		tooltip = "TUO v0.2-alpha";
+		tooltip = "TUO v0.21-alpha";
 		overview = "Trans-Universe Operations (TUO) PMC"
 		picture = "\tuo_units\Data\ui\tuo_logo.paa";
 		logo = "\tuo_units\Data\ui\tuo_logo.paa";
@@ -61,6 +63,14 @@ class CfgEditorSubcategories
 
 class CfgFactionClasses
 {
+	class TUO_OPF_F
+	{
+		displayName = "TUO";
+		icon = "\tuo_units\Data\tuo_logo.paa";
+		flag ="\tuo_units\Data\tuo_logo.paa";
+		priority = 1;
+		side = 0; //OPF_F=0, BLU_F=1, IND_F=2
+	};
 	class TUO_BLU_F
 	{
 		displayName = "TUO";
@@ -68,6 +78,14 @@ class CfgFactionClasses
 		flag ="\tuo_units\Data\tuo_logo.paa";
 		priority = 1;
 		side = 1; //OPF_F=0, BLU_F=1, IND_F=2
+	};
+	class TUO_IND_F
+	{
+		displayName = "TUO";
+		icon = "\tuo_units\Data\tuo_logo.paa";
+		flag ="\tuo_units\Data\tuo_logo.paa";
+		priority = 1;
+		side = 2; //OPF_F=0, BLU_F=1, IND_F=2
 	};
 };
 
@@ -93,7 +111,9 @@ class CfgVehicles
 	#define common ItemMap, ItemCompass, ItemWatch, ItemRadio, ItemGPS
 	
 	#include "TUO_Backpacks.hpp"
+	#include "TUO_Units_OPF_F.hpp"
 	#include "TUO_Units_BLU_F.hpp"
+	#include "TUO_Units_IND_F.hpp"
 	//#include "TUO_Statics_BLU_F.hpp"
 	//#include "TUO_Air_BLU_F.hpp"
 	//#include "TUO_Land_BLU_F.hpp"
@@ -108,7 +128,7 @@ class CfgGlasses
 	{
 		author="bc036";
 		displayname="TUO Diving Contacts";
-		modelSides[] = {0,1,2,3};
+		modelSides[] = {0,1,2,3}; //OPF_F=0, BLU_F=1, IND_F=2
 		model="tuo_units\Data\TUO Uniform\null.p3d";
 		hiddenSelections[]=
 		{
@@ -121,7 +141,7 @@ class CfgGlasses
 		identityTypes[]={};
 		mode=1;
 		mass=3;
-		scope=2;
+		scope=2; //private=0, protected=1, public=2
 	};
 };
 
