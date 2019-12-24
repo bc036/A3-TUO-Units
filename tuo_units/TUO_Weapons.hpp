@@ -76,3 +76,16 @@
 			};
 		};
 	};
+	class launch_MRAWS_olive_F;
+	class TUO_MRAWS_Tropic:launch_MRAWS_olive_F
+	{
+		scope=1; //private=0, protected=1, public=2
+		class LinkedItems
+		{
+			class LinkedItemAcc
+			{
+				slot="PointerSlot";
+				item="acc_pointer_IR";
+			};
+		};
+	};
