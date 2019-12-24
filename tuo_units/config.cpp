@@ -6,10 +6,17 @@ class CfgPatches
 		name="Trans-Universe Operations";
 		units[]= 
 		{
-			"O_TUO_Operative_F",
+			//OPF_F
+			"O_T_TUO_Operative_F",
+			"O_T_TUO_Operative_AT_F",
+			//BLU_F
 			"B_TUO_Soldier_base_F",
-			"B_TUO_Operative_F",
-			"I_TUO_Operative_F",
+			"B_T_TUO_Operative_F",
+			"B_T_TUO_Operative_AT_F",
+			//IND_F
+			"I_T_TUO_Operative_F",
+			"I_T_TUO_Operative_AT_F",
+			//Backpacks
 			"TUO_Backpack_Tropic",
 			"TUO_Backpack_Operative",
 			"TUO_Extra_Pockets",
@@ -23,8 +30,8 @@ class CfgPatches
 			"TUO_Promet",
 			"TUO_Promet_snds",
 		};
-		version=0.21;
-		requiredVersion=0.21;
+		version=0.22;
+		requiredVersion=0.22;
 		requiredAddons[]= 
 		{
 			"A3_Characters_F",
@@ -44,7 +51,7 @@ class CfgMods
 	{
 		dir = "@TUO Units";
 		name = "TUO";
-		tooltip = "TUO v0.21-alpha";
+		tooltip = "TUO v0.22-alpha";
 		overview = "Trans-Universe Operations (TUO) PMC"
 		picture = "\tuo_units\Data\ui\tuo_logo.paa";
 		logo = "\tuo_units\Data\ui\tuo_logo.paa";
@@ -111,8 +118,8 @@ class CfgVehicles
 	#define common ItemMap, ItemCompass, ItemWatch, ItemRadio, ItemGPS
 	
 	#include "TUO_Backpacks.hpp"
-	#include "TUO_Units_OPF_F.hpp"
 	#include "TUO_Units_BLU_F.hpp"
+	#include "TUO_Units_OPF_F.hpp"
 	#include "TUO_Units_IND_F.hpp"
 	//#include "TUO_Statics_BLU_F.hpp"
 	//#include "TUO_Air_BLU_F.hpp"

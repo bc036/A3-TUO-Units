@@ -1,7 +1,7 @@
 class B_Soldier_base_F;
 class B_TUO_Soldier_base_F:B_Soldier_base_F
 	{
-		author="bc036,Muronelkaz";
+		author="bc036";
 		_generalMacro="TUO_Soldier_base";
 		editorPreview="\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_V_Soldier_TL_hex_F.jpg";
 		cost=250000;
@@ -237,11 +237,48 @@ class B_TUO_Soldier_base_F:B_Soldier_base_F
 			common
 		};
 	};
-	class B_TUO_Operative_F:B_TUO_Soldier_base_F
+	class B_T_TUO_Operative_F:B_TUO_Soldier_base_F
 	{
 		scope=2; //private=0, protected=1, public=2
 		scopeArsenal=2; //private=0, protected=1, public=2
 		scopeCurator=2; //private=0, protected=1, public=2
 		displayName="TUO Operative";
 		backpack="TUO_Backpack_Operative";
+		role="SpecialOperative";
+		//rank="PRIVATE"
+	};
+	class B_T_TUO_Operative_AT_F:B_T_TUO_Operative_F
+	{
+		displayName="TUO Operative (AT)";
+		icon="iconManAT";
+		backpack="TUO_Backpack_Tropic_AT";
+		//rank="PRIVATE"
+		weapons[]=
+		{
+			TUO_Promet_snds,
+			TUO_MRAWS_Tropic,
+			Throw,
+			Put,
+			Laserdesignator_03,
+		};
+		respawnWeapons[]=
+		{
+			TUO_Promet_snds,
+			TUO_MRAWS_Tropic,
+			Throw,
+			Put,
+			Laserdesignator_03,
+		};
+		magazines[]=
+		{
+			30Rnd_65x39_caseless_msbs_mag,
+			MRAWS_HEAT_F,
+			Laserbatteries,
+		};
+		respawnMagazines[]=
+		{
+			30Rnd_65x39_caseless_msbs_mag,
+			MRAWS_HEAT_F,
+			Laserbatteries,
+		};
 	};
