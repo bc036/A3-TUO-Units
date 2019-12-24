@@ -64,3 +64,39 @@
 			};
 		};		
 	};
+	class TUO_Backpack_Tropic_AT:TUO_Backpack_Tropic
+	{
+		scope=1; //private=0, protected=1, public=2
+		scopeCurator=1; //private=0, protected=1, public=2
+		class TransportMagazines
+		{
+			class _xx_30Rnd_65x39_caseless_msbs_mag
+			{
+				magazine="30Rnd_65x39_caseless_msbs_mag";
+				count=4;
+			};
+			class _xx_MRAWS_HEAT_F
+			{
+				magazine="MRAWS_HEAT_F";
+				count=2;
+			};
+			class _xx_Chemlight_red
+			{
+				magazine="Chemlight_red";
+				count=2;
+			};
+			class _xx_SmokeShellGreen
+			{
+				magazine="SmokeShellGreen";
+				count=4;
+			};
+		};
+		class TransportItems
+		{
+			class _xx_FirstAidKit
+			{
+				name="FirstAidKit";
+				count=4;
+			};
+		};		
+	};
