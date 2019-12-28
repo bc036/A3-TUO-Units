@@ -76,6 +76,84 @@
 			};
 		};
 	};
+	class arifle_MSBS65_Mark_F;
+	class TUO_Promet_DMR:arifle_MSBS65_Mark_F
+	{
+		scope=1; //private=0, protected=1, public=2
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="optic_ico_01_f";
+			};
+			class LinkedItemAcc
+			{
+				slot="PointerSlot";
+				item="acc_pointer_IR";
+			};
+		};
+	};
+	class TUO_Promet_DMR_snds:TUO_Promet_DMR
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="optic_ico_01_f";
+			};
+			class LinkedItemAcc
+			{
+				slot="PointerSlot";
+				item="acc_pointer_IR";
+			};
+			class LinkedItemsMuzzle
+			{
+				slot="MuzzleSlot";
+				item="muzzle_snds_65_TI_blk_F";
+			};
+		};
+	};
+	class arifle_MSBS65_Mark_sand_F;
+	class TUO_Promet_Arid_DMR:arifle_MSBS65_Mark_sand_F
+	{
+		scope=1; //private=0, protected=1, public=2
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="optic_ico_01_sand_f";
+			};
+			class LinkedItemAcc
+			{
+				slot="PointerSlot";
+				item="acc_pointer_IR";
+			};
+		};
+	};
+	class TUO_Promet_Arid_DMR_snds:TUO_Promet_Arid_DMR
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="optic_ico_01_sand_f";
+			};
+			class LinkedItemAcc
+			{
+				slot="PointerSlot";
+				item="acc_pointer_IR";
+			};
+			class LinkedItemsMuzzle
+			{
+				slot="MuzzleSlot";
+				item="muzzle_snds_65_TI_blk_F";
+			};
+		};
+	};
 	class launch_MRAWS_olive_F;
 	class TUO_MRAWS_Tropic:launch_MRAWS_olive_F
 	{
