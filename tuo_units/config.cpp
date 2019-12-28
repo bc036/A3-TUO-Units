@@ -12,7 +12,7 @@ class CfgPatches
 			"O_T_TUO_Operative_DMR_F",
 			"O_T_TUO_Operative_Demo_F",
 			//BLU_F
-			"B_TUO_Soldier_base_F",
+			"B_TUO_SpecFor_base_F",
 			"B_T_TUO_Operative_F",
 			"B_T_TUO_Operative_AT_F",
 			"B_T_TUO_Operative_DMR_F",

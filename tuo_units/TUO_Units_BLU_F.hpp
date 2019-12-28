@@ -1,5 +1,5 @@
 class B_Soldier_base_F;
-class B_TUO_Soldier_base_F:B_Soldier_base_F
+class B_TUO_SpecFor_base_F:B_Soldier_base_F
 	{
 		author="bc036";
 		_generalMacro="TUO_Soldier_base";
@@ -16,7 +16,7 @@ class B_TUO_Soldier_base_F:B_Soldier_base_F
 			"Head_NATO",
 			"G_NATO_default"
 		};
-		editorSubcategory="EdSubcat_Personnel";
+		editorSubcategory="EdSubcat_Personnel_SpecialForces";
 		displayName="TUO Base";
 		icon="iconMan";
 		picture = "";
@@ -237,7 +237,7 @@ class B_TUO_Soldier_base_F:B_Soldier_base_F
 			common
 		};
 	};
-	class B_T_TUO_Operative_F:B_TUO_Soldier_base_F
+	class B_T_TUO_Operative_F:B_TUO_SpecFor_base_F
 	{
 		scope=2; //private=0, protected=1, public=2
 		scopeArsenal=2; //private=0, protected=1, public=2
