@@ -9,16 +9,24 @@ class CfgPatches
 			//OPF_F
 			"O_T_TUO_Operative_F",
 			"O_T_TUO_Operative_AT_F",
+			"O_T_TUO_Operative_DMR_F",
+			"O_T_TUO_Operative_Demo_F",
 			//BLU_F
 			"B_TUO_Soldier_base_F",
 			"B_T_TUO_Operative_F",
 			"B_T_TUO_Operative_AT_F",
+			"B_T_TUO_Operative_DMR_F",
+			"B_T_TUO_Operative_Demo_F",
 			//IND_F
 			"I_T_TUO_Operative_F",
 			"I_T_TUO_Operative_AT_F",
+			"I_T_TUO_Operative_DMR_F",
+			"I_T_TUO_Operative_Demo_F",
 			//Backpacks
 			"TUO_Backpack_Tropic",
 			"TUO_Backpack_Operative",
+			"TUO_Backpack_Tropic_AT",
+			"TUO_Backpack_Tropic_Demo",
 			"TUO_Extra_Pockets",
 		};
 		weapons[]= 
@@ -29,9 +37,16 @@ class CfgPatches
 			"TUO_Rebreather_Module",
 			"TUO_Promet",
 			"TUO_Promet_snds",
+			"TUO_Promet_DMR",
+			"TUO_Promet_DMR_snds",
+			"TUO_Promet_Arid",
+			"TUO_Promet_Arid_snds",
+			"TUO_Promet_Arid_DMR",
+			"TUO_Promet_Arid_DMR_snds",
+			"TUO_MRAWS_Tropic",
 		};
-		version=0.22;
-		requiredVersion=0.22;
+		version=0.23;
+		requiredVersion=0.23;
 		requiredAddons[]= 
 		{
 			"A3_Characters_F",
