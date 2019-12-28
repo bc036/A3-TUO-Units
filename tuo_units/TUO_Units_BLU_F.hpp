@@ -282,3 +282,43 @@ class B_TUO_Soldier_base_F:B_Soldier_base_F
 			Laserbatteries,
 		};
 	};
+	class B_T_TUO_Operative_DMR_F:B_T_TUO_Operative_F
+	{
+		displayName="TUO Operative (DMR)";
+		icon="iconMan";
+		role="Marksman";
+		//rank="PRIVATE"
+		weapons[]=
+		{
+			TUO_Promet_DMR_snds,
+			Throw,
+			Put,
+			Laserdesignator_03,
+		};
+		respawnWeapons[]=
+		{
+			TUO_Promet_DMR_snds,
+			Throw,
+			Put,
+			Laserdesignator_03,
+		};
+		magazines[]=
+		{
+			30Rnd_65x39_caseless_msbs_mag,
+			Laserbatteries,
+		};
+		respawnMagazines[]=
+		{
+			30Rnd_65x39_caseless_msbs_mag,
+			Laserbatteries,
+		};
+	};
+	class B_T_TUO_Operative_Demo_F:B_T_TUO_Operative_F
+	{
+		displayName="TUO Operative (Demo)";
+		icon="iconManEngineer";
+		backpack="TUO_Backpack_Tropic_Demo";
+		role="SpecialOperative";
+		engineer=1;
+		//rank="PRIVATE"
+	};
