@@ -64,6 +64,45 @@
 			};
 		};		
 	};
+	class TUO_Backpack_Operative_Leader:TUO_Backpack_Operative
+	{
+		class TransportMagazines
+		{
+			class _xx_30Rnd_65x39_caseless_msbs_mag
+			{
+				magazine="30Rnd_65x39_caseless_msbs_mag";
+				count=4;
+			};
+			class _xx_Chemlight_red
+			{
+				magazine="Chemlight_red";
+				count=2;
+			};
+			class _xx_SmokeShellGreen
+			{
+				magazine="SmokeShellGreen";
+				count=2;
+			};
+			class _xx_SmokeShellRed
+			{
+				magazine="SmokeShellRed";
+				count=2;
+			};
+			class _xx_B_IR_Grenade
+			{
+				magazine="B_IR_Grenade";
+				count=1;
+			};
+		};
+		class TransportItems
+		{
+			class _xx_FirstAidKit
+			{
+				name="FirstAidKit";
+				count=4;
+			};
+		};		
+	};
 	class TUO_Backpack_Tropic_AT:TUO_Backpack_Tropic
 	{
 		scope=1; //private=0, protected=1, public=2
@@ -121,16 +160,6 @@
 				magazine="SmokeShellGreen";
 				count=4;
 			};
-			class _xx_ToolKit
-			{
-				magazine="ToolKit";
-				count=1;
-			};
-			class _xx_MineDetector
-			{
-				magazine="MineDetector";
-				count=1;
-			};
 			class _xx_DemoCharge_Remote_Mag
 			{
 				magazine="DemoCharge_Remote_Mag";
@@ -143,6 +172,52 @@
 			{
 				name="FirstAidKit";
 				count=4;
+			};
+			class _xx_ToolKit
+			{
+				magazine="ToolKit";
+				count=1;
+			};
+			class _xx_MineDetector
+			{
+				magazine="MineDetector";
+				count=1;
+			};
+		};		
+	};
+	class TUO_Backpack_Tropic_Medic:TUO_Backpack_Tropic
+	{
+		scope=1; //private=0, protected=1, public=2
+		scopeCurator=1; //private=0, protected=1, public=2
+		class TransportMagazines
+		{
+			class _xx_30Rnd_65x39_caseless_msbs_mag
+			{
+				magazine="30Rnd_65x39_caseless_msbs_mag";
+				count=4;
+			};
+			class _xx_Chemlight_red
+			{
+				magazine="Chemlight_red";
+				count=2;
+			};
+			class _xx_SmokeShellGreen
+			{
+				magazine="SmokeShellGreen";
+				count=8;
+			};
+		};
+		class TransportItems
+		{
+			class _xx_FirstAidKit
+			{
+				name="FirstAidKit";
+				count=10;
+			};
+			class _xx_Medikit
+			{
+				name="Medikit";
+				count=1;
 			};
 		};		
 	};
