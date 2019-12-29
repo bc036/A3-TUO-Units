@@ -11,22 +11,30 @@ class CfgPatches
 			"O_T_TUO_Operative_AT_F",
 			"O_T_TUO_Operative_DMR_F",
 			"O_T_TUO_Operative_Demo_F",
+			"O_T_TUO_Operative_Medic_F",
+			"O_T_TUO_Operative_Leader_F",
 			//BLU_F
 			"B_TUO_SpecFor_base_F",
 			"B_T_TUO_Operative_F",
 			"B_T_TUO_Operative_AT_F",
 			"B_T_TUO_Operative_DMR_F",
 			"B_T_TUO_Operative_Demo_F",
+			"B_T_TUO_Operative_Medic_F",
+			"B_T_TUO_Operative_Leader_F",
 			//IND_F
 			"I_T_TUO_Operative_F",
 			"I_T_TUO_Operative_AT_F",
 			"I_T_TUO_Operative_DMR_F",
 			"I_T_TUO_Operative_Demo_F",
+			"I_T_TUO_Operative_Medic_F",
+			"I_T_TUO_Operative_Leader_F",
 			//Backpacks
 			"TUO_Backpack_Tropic",
 			"TUO_Backpack_Operative",
 			"TUO_Backpack_Tropic_AT",
 			"TUO_Backpack_Tropic_Demo",
+			"TUO_Backpack_Tropic_Medic",
+			"TUO_Backpack_Operative_Leader",
 			"TUO_Extra_Pockets",
 		};
 		weapons[]= 
@@ -64,14 +72,14 @@ class CfgMods
 {
 	class pmc_tuo
 	{
-		dir = "@TUO Units";
-		name = "TUO";
-		tooltip = "TUO v0.22-alpha";
-		overview = "Trans-Universe Operations (TUO) PMC"
-		picture = "\tuo_units\Data\ui\tuo_logo.paa";
-		logo = "\tuo_units\Data\ui\tuo_logo.paa";
-		logoOver = "\tuo_units\Data\ui\tuo_logo.paa";
-		logoSmall = "\tuo_units\Data\ui\tuo_logo.paa";
+		dir="@TUO Units";
+		name="TUO";
+		tooltip="TUO v0.23-alpha";
+		overview="Trans-Universe Operations (TUO) PMC"
+		picture="\tuo_units\Data\ui\tuo_logo.paa";
+		logo="\tuo_units\Data\ui\tuo_logo.paa";
+		logoOver="\tuo_units\Data\ui\tuo_logo.paa";
+		logoSmall="\tuo_units\Data\ui\tuo_logo.paa";
 	};
 };
 
@@ -79,7 +87,7 @@ class CfgEditorSubcategories
 {
 	class EdSubcat_VTOL
 	{
-		displayName = "VTOL";
+		displayName="VTOL";
 	};
 };
 
@@ -87,27 +95,27 @@ class CfgFactionClasses
 {
 	class TUO_OPF_F
 	{
-		displayName = "TUO";
-		icon = "\tuo_units\Data\tuo_logo.paa";
-		flag ="\tuo_units\Data\tuo_logo.paa";
-		priority = 1;
-		side = 0; //OPF_F=0, BLU_F=1, IND_F=2
+		displayName="TUO";
+		icon="\tuo_units\Data\tuo_logo.paa";
+		flag="\tuo_units\Data\tuo_logo.paa";
+		priority=1;
+		side=0; //OPF_F=0, BLU_F=1, IND_F=2
 	};
 	class TUO_BLU_F
 	{
-		displayName = "TUO";
-		icon = "\tuo_units\Data\tuo_logo.paa";
-		flag ="\tuo_units\Data\tuo_logo.paa";
-		priority = 1;
-		side = 1; //OPF_F=0, BLU_F=1, IND_F=2
+		displayName="TUO";
+		icon="\tuo_units\Data\tuo_logo.paa";
+		flag="\tuo_units\Data\tuo_logo.paa";
+		priority=1;
+		side=1; //OPF_F=0, BLU_F=1, IND_F=2
 	};
 	class TUO_IND_F
 	{
-		displayName = "TUO";
-		icon = "\tuo_units\Data\tuo_logo.paa";
-		flag ="\tuo_units\Data\tuo_logo.paa";
-		priority = 1;
-		side = 2; //OPF_F=0, BLU_F=1, IND_F=2
+		displayName="TUO";
+		icon="\tuo_units\Data\tuo_logo.paa";
+		flag="\tuo_units\Data\tuo_logo.paa";
+		priority=1;
+		side=2; //OPF_F=0, BLU_F=1, IND_F=2
 	};
 };
 
@@ -115,7 +123,7 @@ class CfgVehicleClasses
 {
 	class TUO
 	{
-		displayName = "TUO";
+		displayName="TUO";
 	};
 };
 
@@ -150,7 +158,7 @@ class CfgGlasses
 	{
 		author="bc036";
 		displayname="TUO Diving Contacts";
-		modelSides[] = {0,1,2,3}; //OPF_F=0, BLU_F=1, IND_F=2
+		modelSides[]={0,1,2,3}; //OPF_F=0, BLU_F=1, IND_F=2
 		model="tuo_units\Data\TUO Uniform\null.p3d";
 		hiddenSelections[]=
 		{

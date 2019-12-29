@@ -318,7 +318,23 @@ class B_TUO_SpecFor_base_F:B_Soldier_base_F
 		displayName="TUO Operative (Demo)";
 		icon="iconManEngineer";
 		backpack="TUO_Backpack_Tropic_Demo";
-		role="SpecialOperative";
 		engineer=1;
-		//rank="PRIVATE"
+		picture = "pictureExplosive";
+		//rank="CORPORAL"
+	};
+	class B_T_TUO_Operative_Medic_F:B_T_TUO_Operative_F
+	{
+		displayName="TUO Operative (Medic)";
+		icon="iconManMedic";
+		backpack="TUO_Backpack_Tropic_Medic";
+		attendant=1;
+		picture = "pictureHeal";
+		//rank="CORPORAL"
+	};
+	class B_T_TUO_Operative_Leader_F:B_T_TUO_Operative_F
+	{
+		displayName="TUO Operative";
+		icon="iconManLeader";
+		backpack="TUO_Backpack_Operative_Leader";
+		//rank="SERGEANT"
 	};
