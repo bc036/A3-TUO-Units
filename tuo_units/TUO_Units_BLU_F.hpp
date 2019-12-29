@@ -194,7 +194,7 @@ class B_T_TUO_SpecFor_base_F:B_Soldier_base_F
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tuo_units\Data\TUO Uniform\Suit\Tex\TUO_T_Uniform_SpecOp.paa"
+			"tuo_units\Data\TUO Uniform\SpecOps Suit\Tex\TUO_T_Uniform_SpecOp.paa"
 		};
 		weapons[]=
 		{
@@ -249,7 +249,7 @@ class B_T_TUO_SpecFor_base_F:B_Soldier_base_F
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tuo_units\Data\TUO Uniform\Suit\Tex\TUO_A_Uniform_SpecOp.paa"
+			"tuo_units\Data\TUO Uniform\SpecOps Suit\Tex\TUO_A_Uniform_SpecOp.paa"
 		};
 		weapons[]=
 		{

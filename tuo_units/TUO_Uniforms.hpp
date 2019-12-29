@@ -6,7 +6,7 @@
 	{
 		scope=2; //private=0, protected=1, public=2
 		scopeCurator=2; //private=0, protected=1, public=2
-		displayName="TUO Helmet Tropic";
+		displayName="TUO Spec-Ops Helmet Tropic";
 		modelSides[] = {0,1,2,3}; //OPF_F=0, BLU_F=1, IND_F=2
 		hiddenSelections[]=
 		{
@@ -14,7 +14,7 @@
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tuo_units\Data\TUO Uniform\Headgear\Tex\tuo_t_helmet_specop.paa"
+			"tuo_units\Data\TUO Uniform\SpecOps Headgear\Tex\tuo_t_helmet_specop.paa"
 		};
 		class ItemInfo: HeadgearItem
 		{
@@ -48,14 +48,14 @@
 	};
 	class TUO_A_Helmet_SpecOp:TUO_T_Helmet_SpecOp
 	{
-		displayName="TUO Helmet Arid";
+		displayName="TUO Spec-Ops Helmet Arid";
 		hiddenSelections[]=
 		{
 			"camo"
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tuo_units\Data\TUO Uniform\Headgear\Tex\tuo_a_helmet_specop.paa"
+			"tuo_units\Data\TUO Uniform\SpecOps Headgear\Tex\tuo_a_helmet_specop.paa"
 		};
 	};
 	class U_O_V_Soldier_Viper_F;
@@ -63,7 +63,7 @@
 	{
 		scope=2; //private=0, protected=1, public=2
 		scopeCurator=2; //private=0, protected=1, public=2
-		displayName="TUO Uniform Tropic";
+		displayName="TUO Spec-Ops Uniform Tropic";
 		modelSides[] = {0,1,2,3}; //OPF_F=0, BLU_F=1, IND_F=2
 		hiddenSelections[]=
 		{
@@ -71,7 +71,7 @@
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tuo_units\Data\TUO Uniform\Suit\Tex\tuo_t_uniform_specop.paa"
+			"tuo_units\Data\TUO Uniform\SpecOps Suit\Tex\tuo_t_uniform_specop.paa"
 		};
 		class ItemInfo: UniformItem
 		{
@@ -83,14 +83,14 @@
 	};
 	class TUO_A_Uniform_SpecOp:TUO_T_Uniform_SpecOp
 	{
-		displayName="TUO Uniform Arid";
+		displayName="TUO Spec-Ops Uniform Arid";
 		hiddenSelections[]=
 		{
 			"camo"
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tuo_units\Data\TUO Uniform\Suit\Tex\tuo_a_uniform_specop.paa"
+			"tuo_units\Data\TUO Uniform\SpecOps Suit\Tex\tuo_a_uniform_specop.paa"
 		};
 		class ItemInfo: UniformItem
 		{

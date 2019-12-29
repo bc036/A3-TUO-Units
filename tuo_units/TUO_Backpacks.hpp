@@ -24,21 +24,21 @@
 	{
 		scope=2; //private=0, protected=1, public=2
 		scopeCurator=2; //private=0, protected=1, public=2
-		displayName="TUO Backpack Tropic";
+		displayName="TUO Spec-Ops Backpack Tropic";
 		modelSides[] = {0,1,2,3}; //OPF_F=0, BLU_F=1, IND_F=2
 		hiddenSelectionsTextures[]=
 		{
-			"\tuo_units\Data\TUO Uniform\Backpack\Tex\tuo_t_backpack_specop.paa"
+			"\tuo_units\Data\TUO Uniform\SpecOps Backpack\Tex\tuo_t_backpack_specop.paa"
 		};
 		maximumLoad=260;
 		mass=45;
 	};
 	class TUO_A_Backpack_SpecOp:TUO_T_Backpack_SpecOp
 	{
-		displayName="TUO Backpack Arid";
+		displayName="TUO Spec-Ops Backpack Arid";
 		hiddenSelectionsTextures[]=
 		{
-			"\tuo_units\Data\TUO Uniform\Backpack\Tex\tuo_a_backpack_specop.paa"
+			"\tuo_units\Data\TUO Uniform\SpecOps Backpack\Tex\tuo_a_backpack_specop.paa"
 		};
 	};
 	class TUO_T_Backpack_Operative:TUO_Extra_Pockets
