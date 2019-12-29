@@ -1,0 +1,46 @@
+Marksman
+
+
+
+comment "Exported from Arsenal by bc036";
+
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+comment "Add weapons";
+this addWeapon "arifle_MSBS65_Mark_sand_F";
+this addPrimaryWeaponItem "muzzle_snds_65_TI_blk_F";
+this addPrimaryWeaponItem "acc_pointer_IR";
+this addPrimaryWeaponItem "optic_ico_01_sand_f";
+this addPrimaryWeaponItem "30Rnd_65x39_caseless_msbs_mag";
+
+comment "Add containers";
+this forceAddUniform "TUO_A_Uniform_SpecOp";
+this addVest "TUO_Rebreather_Module";
+this addBackpack "TUO_T_Backpack_Operative";
+
+comment "Add binoculars";
+this addMagazine "Laserbatteries";
+this addWeapon "Laserdesignator_03";
+
+comment "Add items to containers";
+for "_i" from 1 to 4 do {this addItemToBackpack "FirstAidKit";};
+for "_i" from 1 to 4 do {this addItemToBackpack "30Rnd_65x39_caseless_msbs_mag";};
+for "_i" from 1 to 2 do {this addItemToBackpack "Chemlight_red";};
+for "_i" from 1 to 4 do {this addItemToBackpack "SmokeShellGreen";};
+this addHeadgear "TUO_A_Helmet_SpecOp";
+this addGoggles "TUO_Diving_Contacts";
+
+comment "Add items";
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "ItemWatch";
+this linkItem "ItemRadio";
+this linkItem "ItemGPS";
