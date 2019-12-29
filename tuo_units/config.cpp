@@ -13,14 +13,27 @@ class CfgPatches
 			"O_T_TUO_Operative_Demo_F",
 			"O_T_TUO_Operative_Medic_F",
 			"O_T_TUO_Operative_Leader_F",
+			"O_A_TUO_Operative_F",
+			"O_A_TUO_Operative_AT_F",
+			"O_A_TUO_Operative_DMR_F",
+			"O_A_TUO_Operative_Demo_F",
+			"O_A_TUO_Operative_Medic_F",
+			"O_A_TUO_Operative_Leader_F",
 			//BLU_F
-			"B_TUO_SpecFor_base_F",
+			"B_T_TUO_SpecFor_base_F",
 			"B_T_TUO_Operative_F",
 			"B_T_TUO_Operative_AT_F",
 			"B_T_TUO_Operative_DMR_F",
 			"B_T_TUO_Operative_Demo_F",
 			"B_T_TUO_Operative_Medic_F",
 			"B_T_TUO_Operative_Leader_F",
+			"B_A_TUO_SpecFor_base_F",
+			"B_A_TUO_Operative_F",
+			"B_A_TUO_Operative_AT_F",
+			"B_A_TUO_Operative_DMR_F",
+			"B_A_TUO_Operative_Demo_F",
+			"B_A_TUO_Operative_Medic_F",
+			"B_A_TUO_Operative_Leader_F",
 			//IND_F
 			"I_T_TUO_Operative_F",
 			"I_T_TUO_Operative_AT_F",
@@ -28,33 +41,53 @@ class CfgPatches
 			"I_T_TUO_Operative_Demo_F",
 			"I_T_TUO_Operative_Medic_F",
 			"I_T_TUO_Operative_Leader_F",
+			"I_A_TUO_Operative_F",
+			"I_A_TUO_Operative_AT_F",
+			"I_A_TUO_Operative_DMR_F",
+			"I_A_TUO_Operative_Demo_F",
+			"I_A_TUO_Operative_Medic_F",
+			"I_A_TUO_Operative_Leader_F",
 			//Backpacks
-			"TUO_Backpack_Tropic",
-			"TUO_Backpack_Operative",
-			"TUO_Backpack_Tropic_AT",
-			"TUO_Backpack_Tropic_Demo",
-			"TUO_Backpack_Tropic_Medic",
-			"TUO_Backpack_Operative_Leader",
+			"TUO_T_Backpack_SpecOp",
+			"TUO_A_Backpack_SpecOp",
+			"TUO_T_Backpack_Operative",
+			"TUO_A_Backpack_Operative",
+			"TUO_T_Backpack_SpecOp_AT",
+			"TUO_A_Backpack_SpecOp_AT",
+			"TUO_T_Backpack_SpecOp_Demo",
+			"TUO_A_Backpack_SpecOp_Demo",
+			"TUO_T_Backpack_SpecOp_Medic",
+			"TUO_A_Backpack_SpecOp_Medic",
+			"TUO_T_Backpack_Operative_Leader",
+			"TUO_A_Backpack_Operative_Leader",
 			"TUO_Extra_Pockets",
 		};
 		weapons[]= 
 		{
-			"TUO_Helmet_Tropic",
-			"TUO_Uniform_Tropic",
+			//Helmets
+			"TUO_T_Helmet_SpecOp",
+			"TUO_A_Helmet_SpecOp",
+			//Uniforms
+			"TUO_T_Uniform_SpecOp",
+			"TUO_A_Uniform_SpecOp",
+			//Vests
 			"TUO_Vest_Tropic",
 			"TUO_Rebreather_Module",
-			"TUO_Promet",
-			"TUO_Promet_snds",
-			"TUO_Promet_DMR",
-			"TUO_Promet_DMR_snds",
-			"TUO_Promet_Arid",
-			"TUO_Promet_Arid_snds",
-			"TUO_Promet_Arid_DMR",
-			"TUO_Promet_Arid_DMR_snds",
-			"TUO_MRAWS_Tropic",
+			//Primary
+			"TUO_T_Promet",
+			"TUO_T_Promet_snds",
+			"TUO_T_Promet_DMR",
+			"TUO_T_Promet_DMR_snds",
+			"TUO_T_Promet_Arid",
+			"TUO_A_Promet_snds",
+			"TUO_A_Promet_DMR",
+			"TUO_A_Promet_DMR_snds",
+			//Launchers
+			"TUO_T_MRAWS",
+			"TUO_A_MRAWS",
 		};
-		version=0.23;
-		requiredVersion=0.23;
+		version=0.3;
+		requiredVersion=0.3;
 		requiredAddons[]= 
 		{
 			"A3_Characters_F",
@@ -74,7 +107,7 @@ class CfgMods
 	{
 		dir="@TUO Units";
 		name="TUO";
-		tooltip="TUO v0.23-alpha";
+		tooltip="TUO v0.3-alpha";
 		overview="Trans-Universe Operations (TUO) PMC"
 		picture="\tuo_units\Data\ui\tuo_logo.paa";
 		logo="\tuo_units\Data\ui\tuo_logo.paa";
@@ -93,25 +126,49 @@ class CfgEditorSubcategories
 
 class CfgFactionClasses
 {
-	class TUO_OPF_F
+	class TUO_T_OPF_F
 	{
-		displayName="TUO";
+		displayName="TUO (Tropic)";
 		icon="\tuo_units\Data\tuo_logo.paa";
 		flag="\tuo_units\Data\tuo_logo.paa";
 		priority=1;
 		side=0; //OPF_F=0, BLU_F=1, IND_F=2
 	};
-	class TUO_BLU_F
+	class TUO_A_OPF_F
 	{
-		displayName="TUO";
+		displayName="TUO (Arid)";
+		icon="\tuo_units\Data\tuo_logo.paa";
+		flag="\tuo_units\Data\tuo_logo.paa";
+		priority=1;
+		side=0; //OPF_F=0, BLU_F=1, IND_F=2
+	};
+	class TUO_T_BLU_F
+	{
+		displayName="TUO (Tropic)";
 		icon="\tuo_units\Data\tuo_logo.paa";
 		flag="\tuo_units\Data\tuo_logo.paa";
 		priority=1;
 		side=1; //OPF_F=0, BLU_F=1, IND_F=2
 	};
-	class TUO_IND_F
+	class TUO_A_BLU_F
 	{
-		displayName="TUO";
+		displayName="TUO (Arid)";
+		icon="\tuo_units\Data\tuo_logo.paa";
+		flag="\tuo_units\Data\tuo_logo.paa";
+		priority=1;
+		side=1; //OPF_F=0, BLU_F=1, IND_F=2
+	};
+	class TUO_T_IND_F
+	{
+		displayName="TUO (Tropic)";
+		icon="\tuo_units\Data\tuo_logo.paa";
+		flag="\tuo_units\Data\tuo_logo.paa";
+		priority=1;
+		side=2; //OPF_F=0, BLU_F=1, IND_F=2
+	};
+	class TUO_A_IND_F
+	{
+		displayName="TUO (Arid)";
 		icon="\tuo_units\Data\tuo_logo.paa";
 		flag="\tuo_units\Data\tuo_logo.paa";
 		priority=1;

@@ -2,7 +2,7 @@
 	class UniformItem;
 	class VestItem;
 	class H_HelmetO_ViperSP_ghex_F;
-	class TUO_Helmet_Tropic:H_HelmetO_ViperSP_ghex_F
+	class TUO_T_Helmet_SpecOp:H_HelmetO_ViperSP_ghex_F
 	{
 		scope=2; //private=0, protected=1, public=2
 		scopeCurator=2; //private=0, protected=1, public=2
@@ -14,7 +14,7 @@
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tuo_units\Data\TUO Uniform\Headgear\Tex\tuo_helmet_tropic.paa"
+			"tuo_units\Data\TUO Uniform\Headgear\Tex\tuo_t_helmet_specop.paa"
 		};
 		class ItemInfo: HeadgearItem
 		{
@@ -46,8 +46,20 @@
 			"Integrated_NVG_TI_1_F"
 		};
 	};
+	class TUO_A_Helmet_SpecOp:TUO_T_Helmet_SpecOp
+	{
+		displayName="TUO Helmet Arid";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"tuo_units\Data\TUO Uniform\Headgear\Tex\tuo_a_helmet_specop.paa"
+		};
+	};
 	class U_O_V_Soldier_Viper_F;
-	class TUO_Uniform_Tropic:U_O_V_Soldier_Viper_F
+	class TUO_T_Uniform_SpecOp:U_O_V_Soldier_Viper_F
 	{
 		scope=2; //private=0, protected=1, public=2
 		scopeCurator=2; //private=0, protected=1, public=2
@@ -59,12 +71,31 @@
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tuo_units\Data\TUO Uniform\Suit\Tex\tuo_uniform_tropic.paa"
+			"tuo_units\Data\TUO Uniform\Suit\Tex\tuo_t_uniform_specop.paa"
 		};
 		class ItemInfo: UniformItem
 		{
 			uniformModel="-";
-			uniformClass="B_TUO_Soldier_base_F";
+			uniformClass="B_T_TUO_SpecFor_base_F";
+			containerClass="Supply20";
+			mass=120;
+		};
+	};
+	class TUO_A_Uniform_SpecOp:TUO_T_Uniform_SpecOp
+	{
+		displayName="TUO Uniform Arid";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"tuo_units\Data\TUO Uniform\Suit\Tex\tuo_a_uniform_specop.paa"
+		};
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="B_A_TUO_SpecFor_base_F";
 			containerClass="Supply20";
 			mass=120;
 		};

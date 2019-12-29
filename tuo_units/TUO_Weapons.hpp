@@ -1,5 +1,6 @@
+	//Primary
 	class arifle_MSBS65_F;
-	class TUO_Promet:arifle_MSBS65_F
+	class TUO_T_Promet:arifle_MSBS65_F
 	{
 		scope=1; //private=0, protected=1, public=2
 		class LinkedItems
@@ -16,7 +17,7 @@
 			};
 		};
 	};
-	class TUO_Promet_snds:TUO_Promet
+	class TUO_T_Promet_snds:TUO_T_Promet
 	{
 		class LinkedItems
 		{
@@ -38,7 +39,7 @@
 		};
 	};
 	class arifle_MSBS65_sand_F;
-	class TUO_Promet_Arid:arifle_MSBS65_sand_F
+	class TUO_T_Promet_Arid:arifle_MSBS65_sand_F
 	{
 		scope=1; //private=0, protected=1, public=2
 		class LinkedItems
@@ -55,7 +56,7 @@
 			};
 		};
 	};
-	class TUO_Promet_Arid_snds:TUO_Promet_Arid
+	class TUO_A_Promet_snds:TUO_T_Promet_Arid
 	{
 		class LinkedItems
 		{
@@ -77,7 +78,7 @@
 		};
 	};
 	class arifle_MSBS65_Mark_F;
-	class TUO_Promet_DMR:arifle_MSBS65_Mark_F
+	class TUO_T_Promet_DMR:arifle_MSBS65_Mark_F
 	{
 		scope=1; //private=0, protected=1, public=2
 		class LinkedItems
@@ -94,7 +95,7 @@
 			};
 		};
 	};
-	class TUO_Promet_DMR_snds:TUO_Promet_DMR
+	class TUO_T_Promet_DMR_snds:TUO_T_Promet_DMR
 	{
 		class LinkedItems
 		{
@@ -116,7 +117,7 @@
 		};
 	};
 	class arifle_MSBS65_Mark_sand_F;
-	class TUO_Promet_Arid_DMR:arifle_MSBS65_Mark_sand_F
+	class TUO_A_Promet_DMR:arifle_MSBS65_Mark_sand_F
 	{
 		scope=1; //private=0, protected=1, public=2
 		class LinkedItems
@@ -133,7 +134,7 @@
 			};
 		};
 	};
-	class TUO_Promet_Arid_DMR_snds:TUO_Promet_Arid_DMR
+	class TUO_A_Promet_DMR_snds:TUO_A_Promet_DMR
 	{
 		class LinkedItems
 		{
@@ -154,8 +155,22 @@
 			};
 		};
 	};
+	//Launchers
 	class launch_MRAWS_olive_F;
-	class TUO_MRAWS_Tropic:launch_MRAWS_olive_F
+	class TUO_T_MRAWS:launch_MRAWS_olive_F
+	{
+		scope=1; //private=0, protected=1, public=2
+		class LinkedItems
+		{
+			class LinkedItemAcc
+			{
+				slot="PointerSlot";
+				item="acc_pointer_IR";
+			};
+		};
+	};
+	class launch_MRAWS_sand_F;
+	class TUO_A_MRAWS:launch_MRAWS_sand_F
 	{
 		scope=1; //private=0, protected=1, public=2
 		class LinkedItems
