@@ -6,7 +6,7 @@ class CfgPatches
 		name="Trans-Universe Operations";
 		units[]= 
 		{
-			//OPF_F
+			//Spec-Ops OPF_F
 			"O_T_TUO_Operative_F",
 			"O_T_TUO_Operative_AT_F",
 			"O_T_TUO_Operative_DMR_F",
@@ -19,7 +19,8 @@ class CfgPatches
 			"O_A_TUO_Operative_Demo_F",
 			"O_A_TUO_Operative_Medic_F",
 			"O_A_TUO_Operative_Leader_F",
-			//BLU_F
+			//Reg OPF_F
+			//Spec-Ops BLU_F
 			"B_T_TUO_SpecFor_base_F",
 			"B_T_TUO_Operative_F",
 			"B_T_TUO_Operative_AT_F",
@@ -34,7 +35,10 @@ class CfgPatches
 			"B_A_TUO_Operative_Demo_F",
 			"B_A_TUO_Operative_Medic_F",
 			"B_A_TUO_Operative_Leader_F",
-			//IND_F
+			//Reg BLU_F
+			"B_T_TUO_Reg_base_F",
+			"B_T_TUO_Rifleman_F",
+			//Spec-Ops IND_F
 			"I_T_TUO_Operative_F",
 			"I_T_TUO_Operative_AT_F",
 			"I_T_TUO_Operative_DMR_F",
@@ -47,7 +51,8 @@ class CfgPatches
 			"I_A_TUO_Operative_Demo_F",
 			"I_A_TUO_Operative_Medic_F",
 			"I_A_TUO_Operative_Leader_F",
-			//Backpacks
+			//Reg IND_F
+			//Spec-Ops Backpacks
 			"TUO_T_Backpack_SpecOp",
 			"TUO_A_Backpack_SpecOp",
 			"TUO_T_Backpack_Operative",
@@ -64,15 +69,20 @@ class CfgPatches
 		};
 		weapons[]= 
 		{
-			//Helmets
+			//Spec-Ops Helmets
 			"TUO_T_Helmet_SpecOp",
 			"TUO_A_Helmet_SpecOp",
-			//Uniforms
+			//Reg Helments
+			"TUO_T_Helmet_Reg",
+			//Spec-Ops Uniforms
 			"TUO_T_Uniform_SpecOp",
 			"TUO_A_Uniform_SpecOp",
-			//Vests
-			"TUO_Vest_Tropic",
+			//Reg Uniforms
+			"TUO_T_Uniform_Reg",
+			//Spec-Ops Vests
 			"TUO_Rebreather_Module",
+			//Reg Vests
+			"TUO_Vest_Tropic",
 			//Primary
 			"TUO_T_Promet",
 			"TUO_T_Promet_snds",
@@ -82,12 +92,14 @@ class CfgPatches
 			"TUO_A_Promet_snds",
 			"TUO_A_Promet_DMR",
 			"TUO_A_Promet_DMR_snds",
+			//Secondary
+			"TUO_T_4five",
 			//Launchers
 			"TUO_T_MRAWS",
 			"TUO_A_MRAWS",
 		};
-		version=0.3;
-		requiredVersion=0.3;
+		version=0.31;
+		requiredVersion=0.31;
 		requiredAddons[]= 
 		{
 			"A3_Characters_F",
@@ -107,7 +119,7 @@ class CfgMods
 	{
 		dir="@TUO Units";
 		name="TUO";
-		tooltip="TUO v0.3-alpha";
+		tooltip="TUO v0.31-alpha";
 		overview="Trans-Universe Operations (TUO) PMC"
 		picture="\tuo_units\Data\ui\tuo_logo.paa";
 		logo="\tuo_units\Data\ui\tuo_logo.paa";
@@ -188,6 +200,7 @@ class CfgVehicles
 {
 	#define mag_2(a) a, a
 	#define mag_4(a) a, a, a, a
+	#define mag_5(a) a, a, a, a, a
 	#define mag_6(a) a, a, a, a, a, a
 	#define mag_7(a) a, a, a, a, a, a, a
 	#define mag_8(a) a, a, a, a, a, a, a, a
@@ -198,9 +211,10 @@ class CfgVehicles
 	#define common ItemMap, ItemCompass, ItemWatch, ItemRadio, ItemGPS
 	
 	#include "TUO_Backpacks.hpp"
-	#include "TUO_Units_BLU_F.hpp"
-	#include "TUO_Units_OPF_F.hpp"
-	#include "TUO_Units_IND_F.hpp"
+	#include "TUO_SpecOp_Units_BLU_F.hpp"
+	#include "TUO_Reg_Units_BLU_F.hpp"
+	#include "TUO_SpecOp_Units_OPF_F.hpp"
+	#include "TUO_SpecOp_Units_IND_F.hpp"
 	//#include "TUO_Statics_BLU_F.hpp"
 	//#include "TUO_Air_BLU_F.hpp"
 	//#include "TUO_Land_BLU_F.hpp"
@@ -234,11 +248,14 @@ class CfgGlasses
 
 class CfgGroups
 {
-	//#include "TUO_Groups_BLU_F.hpp"
+	//#include "TUO_SpecOp_Groups_BLU_F.hpp"
+	//#include "TUO_SpecOp_Groups_OPF_F.hpp"
+	//#include "TUO_SpecOp_Groups_IND_F.hpp"
 };
 
 class CfgWeapons
 {
-	#include "TUO_Uniforms.hpp"
+	#include "TUO_SpecOp_Uniforms.hpp"
+	#include "TUO_Reg_Uniforms.hpp"
 	#include "TUO_Weapons.hpp"
 };
