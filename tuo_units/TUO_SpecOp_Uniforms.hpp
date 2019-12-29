@@ -100,14 +100,6 @@
 			mass=120;
 		};
 	};
-	class V_PlateCarrier1_rgr;
-	class TUO_Vest_Tropic:V_PlateCarrier1_rgr
-	{
-		scope=2; //private=0, protected=1, public=2
-		scopeCurator=2; //private=0, protected=1, public=2
-		displayName="TUO Vest Tropic";
-		modelSides[] = {0,1,2,3}; //OPF_F=0, BLU_F=1, IND_F=2
-	};
 	class V_RebreatherB;
 	class TUO_Rebreather_Module:V_RebreatherB
 	{

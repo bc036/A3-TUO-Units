@@ -2,7 +2,7 @@ class B_Soldier_base_F;
 class B_T_TUO_SpecFor_base_F:B_Soldier_base_F
 	{
 		author="bc036";
-		_generalMacro="TUO_Soldier_base";
+		_generalMacro="TUO_SpecOps_base";
 		editorPreview="\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_V_Soldier_TL_hex_F.jpg";
 		cost=250000;
 		side=1; //OPF_F=0, BLU_F=1, IND_F=2
@@ -17,7 +17,7 @@ class B_T_TUO_SpecFor_base_F:B_Soldier_base_F
 			"G_NATO_default"
 		};
 		editorSubcategory="EdSubcat_Personnel_SpecialForces";
-		displayName="TUO Base";
+		displayName="TUO Spec-Ops Base";
 		icon="iconMan";
 		picture = "";
 		vehicleClass="TUO";
@@ -29,8 +29,8 @@ class B_T_TUO_SpecFor_base_F:B_Soldier_base_F
 		sensitivity = 2;
 		canCarryBackPack=1;
 		canDeactivateMines=0; 
-		engineer = 0;
-		attendant = 0;
+		engineer=0;
+		attendant=0;
 		model="\a3\characters_f_exp\opfor\o_viper.p3d";
 		modelSides[]={1,2,3}; //OPF_F=0, BLU_F=1, IND_F=2
 		nakedUniform="U_BasicBody";
@@ -44,145 +44,6 @@ class B_T_TUO_SpecFor_base_F:B_Soldier_base_F
 			{
 				"\a3\characters_f_exp\opfor\data\Suitviperop_suit.rvmat",
 				"\a3\characters_f_exp\opfor\data\SuitViperOp_Suit_injury.rvmat",
-			};
-		};
-		class HitPoints
-		{
-			class HitFace
-			{
-				armor=1;
-				material=-1;
-				name="face_hub";
-				passThrough=0.80000001;
-				radius=0.079999998;
-				explosionShielding=0.1;
-				minimalHit=0.0099999998;
-			};
-			class HitNeck: HitFace
-			{
-				armor=6;
-				material=-1;
-				name="neck";
-				passThrough=0.80000001;
-				radius=0.1;
-				explosionShielding=0.5;
-				minimalHit=0.0099999998;
-			};
-			class HitHead: HitNeck
-			{
-				armor=1;
-				material=-1;
-				name="head";
-				passThrough=0.80000001;
-				radius=0.2;
-				explosionShielding=0.5;
-				minimalHit=0.0099999998;
-				depends="HitFace max HitNeck";
-			};
-			class HitPelvis: HitHead
-			{
-				armor=8;
-				material=-1;
-				name="pelvis";
-				passThrough=0.33000001;
-				radius=0.23999999;
-				explosionShielding=1;
-				visual="injury_body";
-				minimalHit=0.0099999998;
-				depends="";
-			};
-			class HitAbdomen: HitPelvis
-			{
-				armor=8;
-				material=-1;
-				name="spine1";
-				passThrough=0.33000001;
-				radius=0.16;
-				explosionShielding=1;
-				visual="injury_body";
-				minimalHit=0.0099999998;
-			};
-			class HitDiaphragm: HitAbdomen
-			{
-				armor=8;
-				material=-1;
-				name="spine2";
-				passThrough=0.33000001;
-				radius=0.18000001;
-				explosionShielding=1.5;
-				visual="injury_body";
-				minimalHit=0.0099999998;
-			};
-			class HitChest: HitDiaphragm
-			{
-				armor=8;
-				material=-1;
-				name="spine3";
-				passThrough=0.33000001;
-				radius=0.18000001;
-				explosionShielding=1.5;
-				visual="injury_body";
-				minimalHit=0.0099999998;
-			};
-			class HitBody: HitChest
-			{
-				armor=1000;
-				material=-1;
-				name="body";
-				passThrough=1;
-				radius=0;
-				explosionShielding=1.5;
-				visual="injury_body";
-				minimalHit=0.0099999998;
-				depends="HitPelvis max HitAbdomen max HitDiaphragm max HitChest";
-			};
-			class HitArms: HitBody
-			{
-				armor=8;
-				material=-1;
-				name="arms";
-				passThrough=0.69999999;
-				radius=0.1;
-				explosionShielding=0.1;
-				visual="injury_hands";
-				minimalHit=0.0099999998;
-				depends="";
-			};
-			class HitHands: HitArms
-			{
-				armor=8;
-				material=-1;
-				name="hands";
-				passThrough=0.69999999;
-				radius=0.1;
-				explosionShielding=0.1;
-				visual="injury_hands";
-				minimalHit=0.0099999998;
-				depends="HitArms";
-			};
-			class HitLegs: HitHands
-			{
-				armor=8;
-				material=-1;
-				name="legs";
-				passThrough=0.69999999;
-				radius=0.14;
-				explosionShielding=0.1;
-				visual="injury_legs";
-				minimalHit=0.0099999998;
-				depends="";
-			};
-			class Incapacitated: HitLegs
-			{
-				armor=1000;
-				material=-1;
-				name="body";
-				passThrough=1;
-				radius=0;
-				explosionShielding=1;
-				visual="";
-				minimalHit=0;
-				depends="(((Total - 0.25) max 0) + ((HitHead - 0.25) max 0) + ((HitBody - 0.25) max 0)) * 1.45";
 			};
 		};
 		armor=2;
@@ -241,7 +102,7 @@ class B_T_TUO_SpecFor_base_F:B_Soldier_base_F
 	{
 		uniformClass="TUO_A_Uniform_SpecOp";
 		backpack="TUO_A_Backpack_SpecOp";
-		_generalMacro="TUO_Soldier_base_Arid";
+		_generalMacro="TUO_SpecOps_base_Arid";
 		faction="TUO_A_BLU_F";
 		hiddenSelections[]=
 		{
