@@ -155,6 +155,19 @@
 			};
 		};
 	};
+	//Secondary
+	class hgun_Pistol_heavy_01_green_F;
+	class TUO_T_4five:hgun_Pistol_heavy_01_green_F
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="optic_MRD_black";
+			};
+		};
+	};
 	//Launchers
 	class launch_MRAWS_olive_F;
 	class TUO_T_MRAWS:launch_MRAWS_olive_F
