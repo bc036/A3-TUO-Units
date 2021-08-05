@@ -38,6 +38,8 @@ class CfgPatches
 			//Reg BLU_F
 			"B_T_TUO_Reg_base_F",
 			"B_T_TUO_Rifleman_F",
+			"B_A_TUO_Reg_base_F",
+			"B_A_TUO_Rifleman_F",
 			//Spec-Ops IND_F
 			"I_T_TUO_Operative_F",
 			"I_T_TUO_Operative_AT_F",
@@ -74,25 +76,29 @@ class CfgPatches
 			"TUO_A_Helmet_SpecOp",
 			//Reg Helments
 			"TUO_T_Helmet_Reg",
+			"TUO_A_Helmet_Reg",
 			//Spec-Ops Uniforms
 			"TUO_T_Uniform_SpecOp",
 			"TUO_A_Uniform_SpecOp",
 			//Reg Uniforms
 			"TUO_T_Uniform_Reg",
+			"TUO_A_Uniform_Reg",
 			//Spec-Ops Vests
 			"TUO_Rebreather_Module",
 			//Reg Vests
-			"TUO_Vest_Tropic",
+			"TUO_T_Vest",
+			"TUO_A_Vest",
 			//Primary
 			"TUO_T_Promet",
 			"TUO_T_Promet_snds",
 			"TUO_T_Promet_DMR",
 			"TUO_T_Promet_DMR_snds",
-			"TUO_T_Promet_Arid",
+			"TUO_A_Promet",
 			"TUO_A_Promet_snds",
 			"TUO_A_Promet_DMR",
 			"TUO_A_Promet_DMR_snds",
 			//Secondary
+			"TUO_4five",
 			"TUO_T_4five",
 			//Launchers
 			"TUO_T_MRAWS",

@@ -98,7 +98,7 @@ class B_T_TUO_Reg_base_F:B_Soldier_base_F
 	linkedItems[]=
 	{
 		TUO_T_Helmet_Reg,
-		TUO_Vest_Tropic,
+		TUO_T_Vest,
 		G_Balaclava_TI_G_blk_F,
 		common,
 		NVGogglesB_grn_F,
@@ -106,13 +106,84 @@ class B_T_TUO_Reg_base_F:B_Soldier_base_F
 	respawnLinkedItems[]=
 	{
 		TUO_T_Helmet_Reg,
-		TUO_Vest_Tropic,
+		TUO_T_Vest,
 		G_Balaclava_TI_G_blk_F,
 		common,
 		NVGogglesB_grn_F,
 	};
 };
+class B_A_TUO_Reg_base_F:B_T_TUO_Reg_base_F
+{
+	uniformClass="TUO_A_Uniform_Reg";
+	backpack="";
+	_generalMacro="TUO_Soldier_base_Arid";
+	faction="TUO_A_BLU_F";
+	hiddenSelections[]=
+	{
+		"camo"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\A3\Characters_F_Exp\BLUFOR\Data\U_B_CTRG_Soldier_F_co.paa"
+	};
+	weapons[]=
+	{
+		TUO_A_Promet,
+		TUO_4five,
+		Throw,
+		Put,
+		Binocular,
+	};
+	respawnWeapons[]=
+	{
+		TUO_A_Promet,
+		TUO_4five,
+		Throw,
+		Put,
+		Binocular,
+	};
+	magazines[]=
+	{
+		mag_6(30Rnd_65x39_caseless_msbs_mag),
+		11Rnd_45ACP_Mag,
+		mag_2(Chemlight_red),
+		mag_4(SmokeShellGreen),
+	};
+	respawnMagazines[]=
+	{
+		mag_6(30Rnd_65x39_caseless_msbs_mag),
+		11Rnd_45ACP_Mag,
+		mag_2(Chemlight_red),
+		mag_4(SmokeShellGreen),
+	};
+	items[]={};
+	respawnItems[]={};
+	linkedItems[]=
+	{
+		TUO_A_Helmet_Reg,
+		TUO_A_Vest,
+		G_Balaclava_TI_G_blk_F,
+		common,
+		NVGogglesB_blk_F,
+	};
+	respawnLinkedItems[]=
+	{
+		TUO_A_Helmet_Reg,
+		TUO_A_Vest,
+		G_Balaclava_TI_G_blk_F,
+		common,
+		NVGogglesB_blk_F,
+	};
+};
 class B_T_TUO_Rifleman_F:B_T_TUO_Reg_base_F
+{
+	scope=2; //private=0, protected=1, public=2
+	scopeArsenal=2; //private=0, protected=1, public=2
+	scopeCurator=2; //private=0, protected=1, public=2
+	displayName="TUO Rifleman";
+	//rank="PRIVATE"
+};
+class B_A_TUO_Rifleman_F:B_A_TUO_Reg_base_F
 {
 	scope=2; //private=0, protected=1, public=2
 	scopeArsenal=2; //private=0, protected=1, public=2

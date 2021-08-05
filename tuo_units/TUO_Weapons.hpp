@@ -39,7 +39,7 @@
 		};
 	};
 	class arifle_MSBS65_sand_F;
-	class TUO_T_Promet_Arid:arifle_MSBS65_sand_F
+	class TUO_A_Promet:arifle_MSBS65_sand_F
 	{
 		scope=1; //private=0, protected=1, public=2
 		class LinkedItems
@@ -56,7 +56,7 @@
 			};
 		};
 	};
-	class TUO_A_Promet_snds:TUO_T_Promet_Arid
+	class TUO_A_Promet_snds:TUO_A_Promet
 	{
 		class LinkedItems
 		{
@@ -156,6 +156,18 @@
 		};
 	};
 	//Secondary
+	class hgun_Pistol_heavy_01_F;
+	class TUO_4five:hgun_Pistol_heavy_01_F
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="optic_MRD_black";
+			};
+		};
+	};
 	class hgun_Pistol_heavy_01_green_F;
 	class TUO_T_4five:hgun_Pistol_heavy_01_green_F
 	{
