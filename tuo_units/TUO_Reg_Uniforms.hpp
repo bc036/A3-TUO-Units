@@ -42,7 +42,7 @@
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\A3\Characters_F_Exp\BLUFOR\Data\U_B_CTRG_Soldier_F_co.paa"
+			"tuo_units\Data\TUO Uniform\Reg Suit\tuo_uniform_tropic.paa"
 		};
 		DLC="TUO";
 		class ItemInfo: UniformItem
@@ -62,7 +62,14 @@
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\A3\Characters_F_Exp\BLUFOR\Data\U_B_CTRG_Soldier_F_co.paa"
+			"tuo_units\Data\TUO Uniform\Reg Suit\tuo_uniform_arid.paa"
+		};
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="B_A_TUO_Reg_base_F";
+			containerClass="Supply40";
+			mass=40;
 		};
 	};
 	class V_PlateCarrier1_rgr_noflag_F;
@@ -72,8 +79,24 @@
 		scopeCurator=2; //private=0, protected=1, public=2
 		displayName="TUO Reg Vest Tropic";
 		modelSides[]={0,1,2,3}; //OPF_F=0, BLU_F=1, IND_F=2
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"P:\tuo_units\Data\TUO Uniform\Reg Vest\tuo_vest_tropic"
+		};
 	};
 	class TUO_A_Vest:TUO_T_Vest
 	{
 		displayName="TUO Reg Vest Arid";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"P:\tuo_units\Data\TUO Uniform\Reg Vest\tuo_vest_arid"
+		};
 	};

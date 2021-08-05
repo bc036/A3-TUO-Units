@@ -55,7 +55,7 @@ class B_T_TUO_Reg_base_F:B_Soldier_base_F
 	};
 	hiddenSelectionsTextures[]=
 	{
-		"\A3\Characters_F_Exp\BLUFOR\Data\U_B_CTRG_Soldier_F_co.paa"
+		"tuo_units\Data\TUO Uniform\Reg Suit\tuo_uniform_tropic.paa"
 	};
 	weapons[]=
 	{
@@ -124,7 +124,7 @@ class B_A_TUO_Reg_base_F:B_T_TUO_Reg_base_F
 	};
 	hiddenSelectionsTextures[]=
 	{
-		"\A3\Characters_F_Exp\BLUFOR\Data\U_B_CTRG_Soldier_F_co.paa"
+		"tuo_units\Data\TUO Uniform\Reg Suit\tuo_uniform_arid.paa"
 	};
 	weapons[]=
 	{
