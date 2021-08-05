@@ -16,7 +16,7 @@
 	};
 	class TUO_A_Helmet_Reg:TUO_T_Helmet_Reg
 	{
-		displayName="TUo Reg Helmet Arid";
+		displayName="TUO Reg Helmet Arid";
 		hiddenSelections[]=
 		{
 			"camo"
