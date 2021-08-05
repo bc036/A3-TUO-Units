@@ -407,3 +407,57 @@
 			};
 		};		
 	};
+	class B_AssaultPack_blk;
+	class TUO_T_Backpack_Assault:B_AssaultPack_blk
+	{
+		author="bc036"
+		displayName="TUO Assault Pack Tropic";
+		hiddenSelectionsTextures[]=
+		{
+			"\tuo_units\Data\TUO Uniform\Reg Backpack\Tex\tuo_t_assault_backpack.paa"
+		};
+	};
+	class TUO_A_Backpack_Assault:TUO_T_Backpack_Assault
+	{
+		displayName="TUO Assault Pack Arid";
+		hiddenSelectionsTextures[]=
+		{
+			"\tuo_units\Data\TUO Uniform\Reg Backpack\Tex\tuo_a_assault_backpack.paa"
+		};
+	};
+	class B_Kitbag_rgr;
+	class TUO_T_Backpack_Kitbag:B_Kitbag_rgr
+	{
+		author="bc036"
+		displayName="TUO Kitbag Tropic";
+		hiddenSelectionsTextures[]=
+		{
+			"\tuo_units\Data\TUO Uniform\Reg Backpack\Tex\tuo_t_kitbag.paa"
+		};
+	};
+	class TUO_A_Backpack_Kitbag:TUO_T_Backpack_Kitbag
+	{
+		displayName="TUO Kitbag Arid";
+		hiddenSelectionsTextures[]=
+		{
+			"\tuo_units\Data\TUO Uniform\Reg Backpack\Tex\tuo_a_kitbag.paa"
+		};
+	};
+	class B_RadioBag_01_black_F;
+	class TUO_T_Backpack_Radiopack:B_RadioBag_01_black_F
+	{
+		author="bc036"
+		displayName="TUO Radiopack Tropic";
+		hiddenSelectionsTextures[]=
+		{
+			"\tuo_units\Data\TUO Uniform\Radio Pack\Tex\tuo_t_radiopack.paa"
+		};
+	};
+	class TUO_A_Backpack_Radiopack:TUO_T_Backpack_Radiopack
+	{
+		displayName="TUO Radiopack Arid";
+		hiddenSelectionsTextures[]=
+		{
+			"\tuo_units\Data\TUO Uniform\Radio Pack\Tex\tuo_a_radiopack.paa"
+		};
+	};

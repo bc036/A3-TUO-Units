@@ -55,7 +55,7 @@ class B_T_TUO_Reg_base_F:B_Soldier_base_F
 	};
 	hiddenSelectionsTextures[]=
 	{
-		"tuo_units\Data\TUO Uniform\Reg Suit\tuo_uniform_tropic.paa"
+		"tuo_units\Data\TUO Uniform\Reg Suit\Tex\tuo_t_uniform_reg.paa"
 	};
 	weapons[]=
 	{
@@ -78,14 +78,14 @@ class B_T_TUO_Reg_base_F:B_Soldier_base_F
 		mag_6(30Rnd_65x39_caseless_msbs_mag),
 		11Rnd_45ACP_Mag,
 		mag_2(Chemlight_red),
-		mag_4(SmokeShellGreen),
+		mag_4(SmokeShellOrange),
 	};
 	respawnMagazines[]=
 	{
 		mag_6(30Rnd_65x39_caseless_msbs_mag),
 		11Rnd_45ACP_Mag,
 		mag_2(Chemlight_red),
-		mag_4(SmokeShellGreen),
+		mag_4(SmokeShellOrange),
 	};
 	items[]=
 	{
@@ -124,7 +124,7 @@ class B_A_TUO_Reg_base_F:B_T_TUO_Reg_base_F
 	};
 	hiddenSelectionsTextures[]=
 	{
-		"tuo_units\Data\TUO Uniform\Reg Suit\tuo_uniform_arid.paa"
+		"tuo_units\Data\TUO Uniform\Reg Suit\Tex\tuo_a_uniform_reg.paa"
 	};
 	weapons[]=
 	{
@@ -147,14 +147,14 @@ class B_A_TUO_Reg_base_F:B_T_TUO_Reg_base_F
 		mag_6(30Rnd_65x39_caseless_msbs_mag),
 		11Rnd_45ACP_Mag,
 		mag_2(Chemlight_red),
-		mag_4(SmokeShellGreen),
+		mag_4(SmokeShellOrange),
 	};
 	respawnMagazines[]=
 	{
 		mag_6(30Rnd_65x39_caseless_msbs_mag),
 		11Rnd_45ACP_Mag,
 		mag_2(Chemlight_red),
-		mag_4(SmokeShellGreen),
+		mag_4(SmokeShellOrange),
 	};
 	items[]={};
 	respawnItems[]={};

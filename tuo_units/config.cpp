@@ -68,6 +68,13 @@ class CfgPatches
 			"TUO_T_Backpack_Operative_Leader",
 			"TUO_A_Backpack_Operative_Leader",
 			"TUO_Extra_Pockets",
+			//Reg Backpacks
+			"TUO_T_Backpack_Assault",
+			"TUO_A_Backpack_Assault",
+			"TUO_T_Backpack_Kitbag",
+			"TUO_A_Backpack_Kitbag",
+			"TUO_T_Backpack_Radiopack",
+			"TUO_A_Backpack_Radiopack",
 		};
 		weapons[]= 
 		{

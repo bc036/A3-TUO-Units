@@ -11,7 +11,7 @@
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tuo_units\Data\TUO Uniform\Reg Headgear\tuo_helmet_tropic.paa"
+			"tuo_units\Data\TUO Uniform\Reg Headgear\Tex\tuo_t_helmet_reg.paa"
 		};
 	};
 	class TUO_A_Helmet_Reg:TUO_T_Helmet_Reg
@@ -23,7 +23,7 @@
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tuo_units\Data\TUO Uniform\Reg Headgear\tuo_helmet_arid.paa"
+			"tuo_units\Data\TUO Uniform\Reg Headgear\Tex\tuo_a_helmet_reg.paa"
 		};
 	};
 	class U_B_CTRG_Soldier_F;
@@ -42,7 +42,7 @@
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tuo_units\Data\TUO Uniform\Reg Suit\tuo_uniform_tropic.paa"
+			"tuo_units\Data\TUO Uniform\Reg Suit\Tex\tuo_t_uniform_reg.paa"
 		};
 		DLC="TUO";
 		class ItemInfo: UniformItem
@@ -62,7 +62,7 @@
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"tuo_units\Data\TUO Uniform\Reg Suit\tuo_uniform_arid.paa"
+			"tuo_units\Data\TUO Uniform\Reg Suit\Tex\tuo_a_uniform_reg.paa"
 		};
 		class ItemInfo: UniformItem
 		{
@@ -85,7 +85,7 @@
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"P:\tuo_units\Data\TUO Uniform\Reg Vest\tuo_vest_tropic"
+			"P:\tuo_units\Data\TUO Uniform\Reg Vest\Tex\tuo_t_vest_reg"
 		};
 	};
 	class TUO_A_Vest:TUO_T_Vest
@@ -97,6 +97,6 @@
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"P:\tuo_units\Data\TUO Uniform\Reg Vest\tuo_vest_arid"
+			"P:\tuo_units\Data\TUO Uniform\Reg Vest\Tex\tuo_a_vest_reg"
 		};
 	};
