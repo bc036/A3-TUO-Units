@@ -6,7 +6,9 @@
 - Invisible Rebreather (Rebreather Module)
 - Editor Units Tropic/Arid (Spec-ops)
 ### Regular:
-- Rextextured "Advanced Modular Helmet (Chops) Tropic/Arid Variant
+- Retextured "CTRG Stealth Uniform" Tropic/Arid Variant
+- Retextured "Carrier Light" Tropic/Arid Variant
+- Retextured "Advanced Modular Helmet (Chops)" Tropic/Arid Variant
 ### Spec-Ops:
 - Retextured "Special Purpose Suit" Tropic/Arid Variant
 - Retextured "Special Purpose Helmet" Tropic/Arid Variant
