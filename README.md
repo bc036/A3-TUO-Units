@@ -4,11 +4,14 @@
 - "Extra Pockets" (Backpack)
 - Invisible Diving Goggles (Diving Contacts)
 - Invisible Rebreather (Rebreather Module)
+- Retextured "Radio Pack" Tropic/Arid Variant
 - Editor Units Tropic/Arid (Spec-ops)
 ### Regular:
 - Retextured "CTRG Stealth Uniform" Tropic/Arid Variant
 - Retextured "Carrier Light" Tropic/Arid Variant
 - Retextured "Advanced Modular Helmet (Chops)" Tropic/Arid Variant
+- Retextured "Assault Pack" Tropic/Arid Variant
+- Retextured "Kitbag" Tropic/Arid Variant
 ### Spec-Ops:
 - Retextured "Special Purpose Suit" Tropic/Arid Variant
 - Retextured "Special Purpose Helmet" Tropic/Arid Variant
