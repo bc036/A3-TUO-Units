@@ -20,26 +20,60 @@ class CfgPatches
 			"O_A_TUO_Operative_Medic_F",
 			"O_A_TUO_Operative_Leader_F",
 			//Reg OPF_F
+			"O_T_TUO_Reg_base_F",
+			"O_T_TUO_Rifleman_F",
+			"O_T_TUO_Rifleman_AT_F",
+			"O_T_TUO_Mark_F",
+			"O_T_TUO_Engineer_F",
+			"O_T_TUO_Medic_F",
+			"O_T_TUO_Leader_F",
+			"O_T_TUO_Autorifleman_F",
+			"O_T_TUO_Heavy_Gunner_F",
+			"O_A_TUO_Reg_base_F",
+			"O_A_TUO_Rifleman_F",
+			"O_A_TUO_Rifleman_AT_F",
+			"O_A_TUO_Mark_F",
+			"O_A_TUO_Engineer_F",
+			"O_A_TUO_Medic_F",
+			"O_A_TUO_Leader_F",
+			"O_A_TUO_Autorifleman_F",
+			"O_A_TUO_Heavy_Gunner_F",
 			//Spec-Ops BLU_F
-			"B_T_TUO_SpecFor_base_F",
-			"B_T_TUO_Operative_F",
-			"B_T_TUO_Operative_AT_F",
-			"B_T_TUO_Operative_DMR_F",
-			"B_T_TUO_Operative_Demo_F",
-			"B_T_TUO_Operative_Medic_F",
-			"B_T_TUO_Operative_Leader_F",
-			"B_A_TUO_SpecFor_base_F",
-			"B_A_TUO_Operative_F",
-			"B_A_TUO_Operative_AT_F",
-			"B_A_TUO_Operative_DMR_F",
-			"B_A_TUO_Operative_Demo_F",
-			"B_A_TUO_Operative_Medic_F",
-			"B_A_TUO_Operative_Leader_F",
+			"I_T_TUO_SpecFor_base_F",
+			"I_T_TUO_Operative_F",
+			"I_T_TUO_Operative_AT_F",
+			"I_T_TUO_Operative_DMR_F",
+			"I_T_TUO_Operative_Demo_F",
+			"I_T_TUO_Operative_Medic_F",
+			"I_T_TUO_Operative_Leader_F",
+			"I_T_TUO_Grenadier_F",
+			"I_A_TUO_SpecFor_base_F",
+			"I_A_TUO_Operative_F",
+			"I_A_TUO_Operative_AT_F",
+			"I_A_TUO_Operative_DMR_F",
+			"I_A_TUO_Operative_Demo_F",
+			"I_A_TUO_Operative_Medic_F",
+			"I_A_TUO_Operative_Leader_F",
+			"I_A_TUO_Grenadier_F",
 			//Reg BLU_F
-			"B_T_TUO_Reg_base_F",
-			"B_T_TUO_Rifleman_F",
-			"B_A_TUO_Reg_base_F",
-			"B_A_TUO_Rifleman_F",
+			"I_T_TUO_Reg_base_F",
+			"I_T_TUO_Rifleman_F",
+			"I_T_TUO_Rifleman_AT_F",
+			"I_T_TUO_Mark_F",
+			"I_T_TUO_Engineer_F",
+			"I_T_TUO_Medic_F",
+			"I_T_TUO_Leader_F",
+			"I_T_TUO_Autorifleman_F",
+			"I_T_TUO_Heavy_Gunner_F",
+			"I_A_TUO_Reg_base_F",
+			"I_A_TUO_Rifleman_F",
+			"I_A_TUO_Rifleman_AT_F",
+			"I_A_TUO_Mark_F",
+			"I_A_TUO_Engineer_F",
+			"I_A_TUO_Medic_F",
+			"I_A_TUO_Leader_F",
+			"I_A_TUO_Autorifleman_F",
+			"I_A_TUO_Heavy_Gunner_F",
 			//Spec-Ops IND_F
 			"I_T_TUO_Operative_F",
 			"I_T_TUO_Operative_AT_F",
@@ -54,6 +88,24 @@ class CfgPatches
 			"I_A_TUO_Operative_Medic_F",
 			"I_A_TUO_Operative_Leader_F",
 			//Reg IND_F
+			"I_T_TUO_Reg_base_F",
+			"I_T_TUO_Rifleman_F",
+			"I_T_TUO_Rifleman_AT_F",
+			"I_T_TUO_Mark_F",
+			"I_T_TUO_Engineer_F",
+			"I_T_TUO_Medic_F",
+			"I_T_TUO_Leader_F",
+			"I_T_TUO_Autorifleman_F",
+			"I_T_TUO_Heavy_Gunner_F",
+			"I_A_TUO_Reg_base_F",
+			"I_A_TUO_Rifleman_F",
+			"I_A_TUO_Rifleman_AT_F",
+			"I_A_TUO_Mark_F",
+			"I_A_TUO_Engineer_F",
+			"I_A_TUO_Medic_F",
+			"I_A_TUO_Leader_F",
+			"I_A_TUO_Autorifleman_F",
+			"I_A_TUO_Heavy_Gunner_F",
 			//Spec-Ops Backpacks
 			"TUO_T_Backpack_SpecOp",
 			"TUO_A_Backpack_SpecOp",
@@ -71,10 +123,17 @@ class CfgPatches
 			//Reg Backpacks
 			"TUO_T_Backpack_Assault",
 			"TUO_A_Backpack_Assault",
+			"TUO_T_Backpack_Assault_AT",
+			"TUO_A_Backpack_Assault_AT",
+			"TUO_T_Backpack_Assault_Demo",
+			"TUO_A_Backpack_Assault_Demo",
+			"TUO_T_Backpack_Assault_Medic",
+			"TUO_A_Backpack_Assault_Medic",
 			"TUO_T_Backpack_Kitbag",
 			"TUO_A_Backpack_Kitbag",
 			"TUO_T_Backpack_Radiopack",
 			"TUO_A_Backpack_Radiopack",
+			"TUO_T_Backpack_Radiopack_Leader",
 		};
 		weapons[]= 
 		{
@@ -104,6 +163,10 @@ class CfgPatches
 			"TUO_A_Promet_snds",
 			"TUO_A_Promet_DMR",
 			"TUO_A_Promet_DMR_snds",
+			"TUO_T_Promet_GL",
+			"TUO_A_Promet_GL",
+			"TUO_LMG",
+			"TUO_MMG",
 			//Secondary
 			"TUO_4five",
 			"TUO_T_4five",
@@ -111,8 +174,8 @@ class CfgPatches
 			"TUO_T_MRAWS",
 			"TUO_A_MRAWS",
 		};
-		version=0.31;
-		requiredVersion=0.31;
+		version=0.4;
+		requiredVersion=0.4;
 		requiredAddons[]= 
 		{
 			"A3_Characters_F",
@@ -212,6 +275,7 @@ class CfgVehicleClasses
 class CfgVehicles
 {
 	#define mag_2(a) a, a
+	#define mag_3(a) a, a, a
 	#define mag_4(a) a, a, a, a
 	#define mag_5(a) a, a, a, a, a
 	#define mag_6(a) a, a, a, a, a, a
@@ -227,7 +291,9 @@ class CfgVehicles
 	#include "TUO_SpecOp_Units_BLU_F.hpp"
 	#include "TUO_Reg_Units_BLU_F.hpp"
 	#include "TUO_SpecOp_Units_OPF_F.hpp"
+	#include "TUO_Reg_Units_OPF_F.hpp"
 	#include "TUO_SpecOp_Units_IND_F.hpp"
+	#include "TUO_Reg_Units_IND_F.hpp"
 	//#include "TUO_Statics_BLU_F.hpp"
 	//#include "TUO_Air_BLU_F.hpp"
 	//#include "TUO_Land_BLU_F.hpp"
@@ -262,8 +328,11 @@ class CfgGlasses
 class CfgGroups
 {
 	//#include "TUO_SpecOp_Groups_BLU_F.hpp"
+	//#include "TUO_Reg_Groups_BLU_F.hpp"
 	//#include "TUO_SpecOp_Groups_OPF_F.hpp"
+	//#include "TUO_Reg_Groups_OPF_F.hpp"
 	//#include "TUO_SpecOp_Groups_IND_F.hpp"
+	//#include "TUO_Reg_Groups_IND_F.hpp"
 };
 
 class CfgWeapons

@@ -1,3 +1,4 @@
+//Spec-Ops Base
 	class Bag_Base;
 	class TUO_Extra_Pockets:Bag_Base
 	{
@@ -41,6 +42,25 @@
 			"\tuo_units\Data\TUO Uniform\SpecOps Backpack\Tex\tuo_a_backpack_specop.paa"
 		};
 	};
+	class B_RadioBag_01_black_F;
+	class TUO_T_Backpack_Radiopack:B_RadioBag_01_black_F
+	{
+		author="bc036"
+		displayName="TUO Radiopack Tropic";
+		hiddenSelectionsTextures[]=
+		{
+			"\tuo_units\Data\TUO Uniform\Radio Pack\Tex\tuo_t_radiopack.paa"
+		};
+	};
+	class TUO_A_Backpack_Radiopack:TUO_T_Backpack_Radiopack
+	{
+		displayName="TUO Radiopack Arid";
+		hiddenSelectionsTextures[]=
+		{
+			"\tuo_units\Data\TUO Uniform\Radio Pack\Tex\tuo_a_radiopack.paa"
+		};
+	};
+//Spec-Ops Specialized
 	class TUO_T_Backpack_Operative:TUO_Extra_Pockets
 	{
 		scope=1; //private=0, protected=1, public=2
@@ -93,7 +113,7 @@
 			};
 		};
 	};
-	class TUO_T_Backpack_Operative_Leader:TUO_T_Backpack_Operative
+	class TUO_T_Backpack_Operative_Leader:TUO_T_Backpack_Radiopack
 	{
 		class TransportMagazines
 		{
@@ -132,7 +152,7 @@
 			};
 		};		
 	};
-	class TUO_A_Backpack_Operative_Leader:TUO_A_Backpack_Operative
+	class TUO_A_Backpack_Operative_Leader:TUO_A_Backpack_Radiopack
 	{
 		class TransportMagazines
 		{
@@ -407,6 +427,7 @@
 			};
 		};		
 	};
+//Regular Base
 	class B_AssaultPack_blk;
 	class TUO_T_Backpack_Assault:B_AssaultPack_blk
 	{
@@ -443,21 +464,164 @@
 			"\tuo_units\Data\TUO Uniform\Reg Backpack\Tex\tuo_a_kitbag.paa"
 		};
 	};
-	class B_RadioBag_01_black_F;
-	class TUO_T_Backpack_Radiopack:B_RadioBag_01_black_F
+//Regular Specialized
+	class TUO_T_Backpack_Assault_AT:TUO_T_Backpack_Assault
 	{
-		author="bc036"
-		displayName="TUO Radiopack Tropic";
-		hiddenSelectionsTextures[]=
+		scope=1; //private=0, protected=1, public=2
+		scopeCurator=1; //private=0, protected=1, public=2
+		class TransportMagazines
 		{
-			"\tuo_units\Data\TUO Uniform\Radio Pack\Tex\tuo_t_radiopack.paa"
+			class _xx_MRAWS_HEAT_F
+			{
+				magazine="MRAWS_HEAT_F";
+				count=2;
+			};
 		};
 	};
-	class TUO_A_Backpack_Radiopack:TUO_T_Backpack_Radiopack
+	class TUO_A_Backpack_Assault_AT:TUO_A_Backpack_Assault
 	{
-		displayName="TUO Radiopack Arid";
-		hiddenSelectionsTextures[]=
+		scope=1; //private=0, protected=1, public=2
+		scopeCurator=1; //private=0, protected=1, public=2
+		class TransportMagazines
 		{
-			"\tuo_units\Data\TUO Uniform\Radio Pack\Tex\tuo_a_radiopack.paa"
+			class _xx_MRAWS_HEAT_F
+			{
+				magazine="MRAWS_HEAT_F";
+				count=2;
+			};
+		};
+	};
+	class TUO_T_Backpack_Assault_Demo:TUO_T_Backpack_Assault
+	{
+		scope=1; //private=0, protected=1, public=2
+		scopeCurator=1; //private=0, protected=1, public=2
+		class TransportMagazines
+		{
+			class _xx_DemoCharge_Remote_Mag
+			{
+				magazine="DemoCharge_Remote_Mag";
+				count=1;
+			};
+		};
+		class TransportItems
+		{
+			class _xx_ToolKit
+			{
+				name="ToolKit";
+				count=1;
+			};
+			class _xx_MineDetector
+			{
+				name="MineDetector";
+				count=1;
+			};
+		};		
+	};
+	class TUO_A_Backpack_Assault_Demo:TUO_A_Backpack_Assault
+	{
+		scope=1; //private=0, protected=1, public=2
+		scopeCurator=1; //private=0, protected=1, public=2
+		class TransportMagazines
+		{
+			class _xx_DemoCharge_Remote_Mag
+			{
+				magazine="DemoCharge_Remote_Mag";
+				count=1;
+			};
+		};
+		class TransportItems
+		{
+			class _xx_ToolKit
+			{
+				name="ToolKit";
+				count=1;
+			};
+			class _xx_MineDetector
+			{
+				name="MineDetector";
+				count=1;
+			};
+		};	
+	};
+	class TUO_T_Backpack_Assault_Medic:TUO_T_Backpack_Assault
+	{
+		scope=1; //private=0, protected=1, public=2
+		scopeCurator=1; //private=0, protected=1, public=2
+		class TransportItems
+		{
+			class _xx_FirstAidKit
+			{
+				name="FirstAidKit";
+				count=10;
+			};
+			class _xx_Medikit
+			{
+				name="Medikit";
+				count=1;
+			};
+		};	
+	};
+	class TUO_A_Backpack_Assault_Medic:TUO_A_Backpack_Assault
+	{
+		scope=1; //private=0, protected=1, public=2
+		scopeCurator=1; //private=0, protected=1, public=2
+		class TransportItems
+		{
+			class _xx_FirstAidKit
+			{
+				name="FirstAidKit";
+				count=10;
+			};
+			class _xx_Medikit
+			{
+				name="Medikit";
+				count=1;
+			};
+		};	
+	}; 
+	class TUO_T_Backpack_Radiopack_Leader:TUO_T_Backpack_Radiopack
+	{
+		scope=1; //private=0, protected=1, public=2
+		scopeCurator=1; //private=0, protected=1, public=2
+		class TransportMagazines
+		{
+			class _xx_Chemlight_red
+			{
+				magazine="Chemlight_red";
+				count=2;
+			};
+			class _xx_SmokeShellRed
+			{
+				magazine="SmokeShellRed";
+				count=2;
+			};
+			class _xx_B_IR_Grenade
+			{
+				magazine="B_IR_Grenade";
+				count=1;
+			};
+		};
+	};
+	class TUO_A_Backpack_Radiopack_Leader:TUO_A_Backpack_Radiopack
+	{
+		scope=1; //private=0, protected=1, public=2
+		scopeCurator=1; //private=0, protected=1, public=2
+		class TransportMagazines
+		{
+			class _xx_Chemlight_red
+			{
+				magazine="Chemlight_red";
+				count=2;
+			};
+			class _xx_SmokeShellRed
+			{
+				magazine="SmokeShellRed";
+				count=2;
+			};
+			class _xx_B_IR_Grenade
+			{
+				magazine="B_IR_Grenade";
+				count=1;
+			};
 		};
 	};

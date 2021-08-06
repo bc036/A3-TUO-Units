@@ -77,15 +77,13 @@ class B_T_TUO_Reg_base_F:B_Soldier_base_F
 	{
 		mag_6(30Rnd_65x39_caseless_msbs_mag),
 		11Rnd_45ACP_Mag,
-		mag_2(Chemlight_red),
-		mag_4(SmokeShellOrange),
+		mag_4(SmokeShellGreen),
 	};
 	respawnMagazines[]=
 	{
 		mag_6(30Rnd_65x39_caseless_msbs_mag),
 		11Rnd_45ACP_Mag,
-		mag_2(Chemlight_red),
-		mag_4(SmokeShellOrange),
+		mag_4(SmokeShellGreen),
 	};
 	items[]=
 	{
@@ -146,18 +144,22 @@ class B_A_TUO_Reg_base_F:B_T_TUO_Reg_base_F
 	{
 		mag_6(30Rnd_65x39_caseless_msbs_mag),
 		11Rnd_45ACP_Mag,
-		mag_2(Chemlight_red),
 		mag_4(SmokeShellOrange),
 	};
 	respawnMagazines[]=
 	{
 		mag_6(30Rnd_65x39_caseless_msbs_mag),
 		11Rnd_45ACP_Mag,
-		mag_2(Chemlight_red),
 		mag_4(SmokeShellOrange),
 	};
-	items[]={};
-	respawnItems[]={};
+	items[]=
+	{
+		mag_4(FirstAidKit),
+	};
+	respawnItems[]=
+	{
+		mag_4(FirstAidKit),
+	};
 	linkedItems[]=
 	{
 		TUO_A_Helmet_Reg,
@@ -190,4 +192,662 @@ class B_A_TUO_Rifleman_F:B_A_TUO_Reg_base_F
 	scopeCurator=2; //private=0, protected=1, public=2
 	displayName="TUO Rifleman";
 	//rank="PRIVATE"
+};
+class B_T_TUO_Rifleman_AT_F:B_T_TUO_Rifleman_F
+{
+	displayName="TUO Rifleman (AT)";
+	backpack="TUO_T_Backpack_Assault_AT";
+	icon="iconManAT";
+	role="MissileSpecialist";
+	//rank="PRIVATE"
+	weapons[]=
+	{
+		TUO_T_Promet,
+		TUO_T_4five,
+		TUO_T_MRAWS,
+		Throw,
+		Put,
+		Binocular,
+	};
+	respawnWeapons[]=
+	{
+		TUO_T_Promet,
+		TUO_T_4five,
+		TUO_T_MRAWS,
+		Throw,
+		Put,
+		Binocular,
+	};
+	magazines[]=
+	{
+		mag_6(30Rnd_65x39_caseless_msbs_mag),
+		11Rnd_45ACP_Mag,
+		mag_4(SmokeShellGreen),
+	};
+	respawnMagazines[]=
+	{
+		mag_6(30Rnd_65x39_caseless_msbs_mag),
+		11Rnd_45ACP_Mag,
+		mag_4(SmokeShellGreen),
+	};
+	items[]=
+	{
+		mag_4(FirstAidKit),
+	};
+	respawnItems[]=
+	{
+		mag_4(FirstAidKit),
+	};
+	linkedItems[]=
+	{
+		TUO_T_Helmet_Reg,
+		TUO_T_Vest,
+		G_Balaclava_TI_G_blk_F,
+		common,
+		NVGogglesB_grn_F,
+	};
+	respawnLinkedItems[]=
+	{
+		TUO_T_Helmet_Reg,
+		TUO_T_Vest,
+		G_Balaclava_TI_G_blk_F,
+		common,
+		NVGogglesB_grn_F,
+	};
+};
+class B_A_TUO_Rifleman_AT_F:B_A_TUO_Rifleman_F
+{
+	displayName="TUO Rifleman (AT)";
+	backpack="TUO_A_Backpack_Assault_AT";
+	icon="iconManAT";
+	role="MissileSpecialist";
+	//rank="PRIVATE"
+	weapons[]=
+	{
+		TUO_A_Promet,
+		TUO_4five,
+		TUO_A_MRAWS,
+		Throw,
+		Put,
+		Binocular,
+	};
+	respawnWeapons[]=
+	{
+		TUO_A_Promet,
+		TUO_4five,
+		TUO_A_MRAWS,
+		Throw,
+		Put,
+		Binocular,
+	};
+	magazines[]=
+	{
+		mag_6(30Rnd_65x39_caseless_msbs_mag),
+		11Rnd_45ACP_Mag,
+		mag_4(SmokeShellOrange),
+	};
+	respawnMagazines[]=
+	{
+		mag_6(30Rnd_65x39_caseless_msbs_mag),
+		11Rnd_45ACP_Mag,
+		mag_4(SmokeShellOrange),
+	};
+	items[]=
+	{
+		mag_4(FirstAidKit),
+	};
+	respawnItems[]=
+	{
+		mag_4(FirstAidKit),
+	};
+	linkedItems[]=
+	{
+		TUO_A_Helmet_Reg,
+		TUO_A_Vest,
+		G_Balaclava_TI_G_blk_F,
+		common,
+		NVGogglesB_blk_F,
+	};
+	respawnLinkedItems[]=
+	{
+		TUO_A_Helmet_Reg,
+		TUO_A_Vest,
+		G_Balaclava_TI_G_blk_F,
+		common,
+		NVGogglesB_blk_F,
+	};
+};
+class B_T_TUO_Mark_F:B_T_TUO_Rifleman_F
+{
+	displayName="TUO Marksman";
+	icon="iconMan";
+	role="Marksman";
+	//rank="PRIVATE"
+	weapons[]=
+	{
+		TUO_T_Promet_DMR,
+		TUO_T_4five,
+		Throw,
+		Put,
+		Binocular,
+	};
+	respawnWeapons[]=
+	{
+		TUO_T_Promet_DMR,
+		TUO_T_4five,
+		Throw,
+		Put,
+		Binocular,
+	};
+	magazines[]=
+	{
+		mag_6(30Rnd_65x39_caseless_msbs_mag),
+		11Rnd_45ACP_Mag,
+		mag_4(SmokeShellGreen),
+	};
+	respawnMagazines[]=
+	{
+		mag_6(30Rnd_65x39_caseless_msbs_mag),
+		11Rnd_45ACP_Mag,
+		mag_4(SmokeShellGreen),
+	};
+	items[]=
+	{
+		mag_4(FirstAidKit),
+	};
+	respawnItems[]=
+	{
+		mag_4(FirstAidKit),
+	};
+	linkedItems[]=
+	{
+		TUO_T_Helmet_Reg,
+		TUO_T_Vest,
+		G_Balaclava_TI_G_blk_F,
+		common,
+		NVGogglesB_grn_F,
+	};
+	respawnLinkedItems[]=
+	{
+		TUO_T_Helmet_Reg,
+		TUO_T_Vest,
+		G_Balaclava_TI_G_blk_F,
+		common,
+		NVGogglesB_grn_F,
+	};
+};
+class B_A_TUO_Mark_F:B_A_TUO_Rifleman_F
+{
+	displayName="TUO Marksman";
+	icon="iconMan";
+	role="Marksman";
+	//rank="PRIVATE"
+	weapons[]=
+	{
+		TUO_A_Promet_DMR,
+		TUO_4five,
+		Throw,
+		Put,
+		Binocular,
+	};
+	respawnWeapons[]=
+	{
+		TUO_A_Promet_DMR,
+		TUO_4five,
+		Throw,
+		Put,
+		Binocular,
+	};
+	magazines[]=
+	{
+		mag_6(30Rnd_65x39_caseless_msbs_mag),
+		11Rnd_45ACP_Mag,
+		mag_4(SmokeShellOrange),
+	};
+	respawnMagazines[]=
+	{
+		mag_6(30Rnd_65x39_caseless_msbs_mag),
+		11Rnd_45ACP_Mag,
+		mag_4(SmokeShellOrange),
+	};
+	items[]=
+	{
+		mag_4(FirstAidKit),
+	};
+	respawnItems[]=
+	{
+		mag_4(FirstAidKit),
+	};
+	linkedItems[]=
+	{
+		TUO_A_Helmet_Reg,
+		TUO_A_Vest,
+		G_Balaclava_TI_G_blk_F,
+		common,
+		NVGogglesB_blk_F,
+	};
+	respawnLinkedItems[]=
+	{
+		TUO_A_Helmet_Reg,
+		TUO_A_Vest,
+		G_Balaclava_TI_G_blk_F,
+		common,
+		NVGogglesB_blk_F,
+	};
+};
+class B_T_TUO_Engineer_F:B_T_TUO_Rifleman_F
+{
+	displayName="TUO Engineer";
+	backpack="TUO_T_Backpack_Assault_Demo";
+	icon="iconManEngineer";
+	role="Sapper";
+	engineer=1;
+	canDeactivateMines=1;
+	picture = "pictureRepair";
+	//rank="CORPORAL"
+};
+class B_A_TUO_Engineer_F:B_A_TUO_Rifleman_F
+{
+	displayName="TUO Engineer";
+	backpack="TUO_A_Backpack_Assault_Demo";
+	icon="iconManEngineer";
+	role="Sapper";
+	engineer=1;
+	canDeactivateMines=1;
+	picture = "pictureRepair";
+	//rank="CORPORAL"
+};
+class B_T_TUO_Medic_F:B_T_TUO_Rifleman_F
+{
+	displayName="TUO Medic";
+	backpack="TUO_T_Backpack_Assault_Medic";
+	icon="iconManMedic";
+	role="CombatLifeSaver";
+	attendant=1;
+	picture = "pictureHeal";
+	//rank="CORPORAL"
+};
+class B_A_TUO_Medic_F:B_A_TUO_Rifleman_F
+{
+	displayName="TUO Medic";
+	backpack="TUO_A_Backpack_Assault_Medic";
+	icon="iconManMedic";
+	role="CombatLifeSaver";
+	attendant=1;
+	picture = "pictureHeal";
+	//rank="CORPORAL"
+};
+class B_T_TUO_Leader_F:B_T_TUO_Rifleman_F
+{
+	displayName="TUO Squad Leader";
+	icon="iconManLeader";
+	backpack="TUO_T_Backpack_Radiopack_Leader";
+	//rank="SERGEANT"
+};
+class B_A_TUO_Leader_F:B_A_TUO_Rifleman_F
+{
+	displayName="TUO Squad Leader";
+	icon="iconManLeader";
+	backpack="TUO_A_Backpack_Radiopack_Leader";
+	//rank="SERGEANT"
+};
+class B_T_TUO_Autorifleman_F:B_T_TUO_Rifleman_F
+{
+	displayName="TUO Autorifleman";
+	icon="iconManMG";
+	role="MachineGunner";
+	//rank="CORPORAL"
+	weapons[]=
+	{
+		TUO_LMG,
+		TUO_T_4five,
+		Throw,
+		Put,
+		Binocular,
+	};
+	respawnWeapons[]=
+	{
+		TUO_LMG,
+		TUO_T_4five,
+		Throw,
+		Put,
+		Binocular,
+	};
+	magazines[]=
+	{
+		mag_2(200Rnd_65x39_cased_Box),
+		11Rnd_45ACP_Mag,
+		mag_4(SmokeShellGreen),
+	};
+	respawnMagazines[]=
+	{
+		mag_2(200Rnd_65x39_cased_Box),
+		11Rnd_45ACP_Mag,
+		mag_4(SmokeShellGreen),
+	};
+	items[]=
+	{
+		mag_4(FirstAidKit),
+	};
+	respawnItems[]=
+	{
+		mag_4(FirstAidKit),
+	};
+	linkedItems[]=
+	{
+		TUO_T_Helmet_Reg,
+		TUO_T_Vest,
+		G_Balaclava_TI_G_blk_F,
+		common,
+		NVGogglesB_grn_F,
+	};
+	respawnLinkedItems[]=
+	{
+		TUO_T_Helmet_Reg,
+		TUO_T_Vest,
+		G_Balaclava_TI_G_blk_F,
+		common,
+		NVGogglesB_grn_F,
+	};
+};
+class B_A_TUO_Autorifleman_F:B_A_TUO_Rifleman_F
+{
+	displayName="TUO Autorifleman";
+	icon="iconManMG";
+	role="MachineGunner";
+	//rank="CORPORAL"
+	weapons[]=
+	{
+		TUO_LMG,
+		TUO_4five,
+		Throw,
+		Put,
+		Binocular,
+	};
+	respawnWeapons[]=
+	{
+		TUO_LMG,
+		TUO_4five,
+		Throw,
+		Put,
+		Binocular,
+	};
+	magazines[]=
+	{
+		mag_2(200Rnd_65x39_cased_Box),
+		11Rnd_45ACP_Mag,
+		mag_4(SmokeShellOrange),
+	};
+	respawnMagazines[]=
+	{
+		mag_2(200Rnd_65x39_cased_Box),
+		11Rnd_45ACP_Mag,
+		mag_4(SmokeShellOrange),
+	};
+	items[]=
+	{
+		mag_4(FirstAidKit),
+	};
+	respawnItems[]=
+	{
+		mag_4(FirstAidKit),
+	};
+	linkedItems[]=
+	{
+		TUO_A_Helmet_Reg,
+		TUO_A_Vest,
+		G_Balaclava_TI_G_blk_F,
+		common,
+		NVGogglesB_blk_F,
+	};
+	respawnLinkedItems[]=
+	{
+		TUO_A_Helmet_Reg,
+		TUO_A_Vest,
+		G_Balaclava_TI_G_blk_F,
+		common,
+		NVGogglesB_blk_F,
+	};
+};
+class B_T_TUO_Heavy_Gunner_F:B_T_TUO_Rifleman_F
+{
+	displayName="TUO Heavy Gunner";
+	icon="iconManMG";
+	role="MachineGunner";
+	//rank="CORPORAL"
+	weapons[]=
+	{
+		TUO_MMG,
+		TUO_T_4five,
+		Throw,
+		Put,
+		Binocular,
+	};
+	respawnWeapons[]=
+	{
+		TUO_MMG,
+		TUO_T_4five,
+		Throw,
+		Put,
+		Binocular,
+	};
+	magazines[]=
+	{
+		mag_2(130Rnd_338_Mag),
+		11Rnd_45ACP_Mag,
+		mag_4(SmokeShellGreen),
+	};
+	respawnMagazines[]=
+	{
+		mag_2(130Rnd_338_Mag),
+		11Rnd_45ACP_Mag,
+		mag_4(SmokeShellGreen),
+	};
+	items[]=
+	{
+		mag_4(FirstAidKit),
+	};
+	respawnItems[]=
+	{
+		mag_4(FirstAidKit),
+	};
+	linkedItems[]=
+	{
+		TUO_T_Helmet_Reg,
+		TUO_T_Vest,
+		G_Balaclava_TI_G_blk_F,
+		common,
+		NVGogglesB_grn_F,
+	};
+	respawnLinkedItems[]=
+	{
+		TUO_T_Helmet_Reg,
+		TUO_T_Vest,
+		G_Balaclava_TI_G_blk_F,
+		common,
+		NVGogglesB_grn_F,
+	};
+};
+class B_A_TUO_Heavy_Gunner_F:B_A_TUO_Rifleman_F
+{
+	displayName="TUO Heavy Gunner";
+	icon="iconManMG";
+	role="MachineGunner";
+	//rank="CORPORAL"
+	weapons[]=
+	{
+		TUO_MMG,
+		TUO_4five,
+		Throw,
+		Put,
+		Binocular,
+	};
+	respawnWeapons[]=
+	{
+		TUO_MMG,
+		TUO_4five,
+		Throw,
+		Put,
+		Binocular,
+	};
+	magazines[]=
+	{
+		mag_2(130Rnd_338_Mag),
+		11Rnd_45ACP_Mag,
+		mag_4(SmokeShellOrange),
+	};
+	respawnMagazines[]=
+	{
+		mag_2(130Rnd_338_Mag),
+		11Rnd_45ACP_Mag,
+		mag_4(SmokeShellOrange),
+	};
+	items[]=
+	{
+		mag_4(FirstAidKit),
+	};
+	respawnItems[]=
+	{
+		mag_4(FirstAidKit),
+	};
+	linkedItems[]=
+	{
+		TUO_A_Helmet_Reg,
+		TUO_A_Vest,
+		G_Balaclava_TI_G_blk_F,
+		common,
+		NVGogglesB_blk_F,
+	};
+	respawnLinkedItems[]=
+	{
+		TUO_A_Helmet_Reg,
+		TUO_A_Vest,
+		G_Balaclava_TI_G_blk_F,
+		common,
+		NVGogglesB_blk_F,
+	};
+};
+class B_T_TUO_Grenadier_F:B_T_TUO_Rifleman_F
+{
+	displayName="TUO Grenadier";
+	role="Grenadier";
+	//rank="CORPORAL"
+	weapons[]=
+	{
+		TUO_T_Promet_GL,
+		TUO_T_4five,
+		Throw,
+		Put,
+		Binocular,
+	};
+	respawnWeapons[]=
+	{
+		TUO_T_Promet_GL,
+		TUO_T_4five,
+		Throw,
+		Put,
+		Binocular,
+	};
+	magazines[]=
+	{
+		mag_6(30Rnd_65x39_caseless_msbs_mag),
+		mag_6(1Rnd_HE_Grenade_shell),
+		mag_2(1Rnd_SmokeGreen_Grenade_shell),
+		11Rnd_45ACP_Mag,
+		mag_4(SmokeShellGreen),
+	};
+	respawnMagazines[]=
+	{
+		mag_6(30Rnd_65x39_caseless_msbs_mag),
+		mag_6(1Rnd_HE_Grenade_shell),
+		mag_2(1Rnd_SmokeGreen_Grenade_shell),
+		11Rnd_45ACP_Mag,
+		mag_4(SmokeShellGreen),
+	};
+	items[]=
+	{
+		mag_4(FirstAidKit),
+	};
+	respawnItems[]=
+	{
+		mag_4(FirstAidKit),
+	};
+	linkedItems[]=
+	{
+		TUO_T_Helmet_Reg,
+		TUO_T_Vest,
+		G_Balaclava_TI_G_blk_F,
+		common,
+		NVGogglesB_grn_F,
+	};
+	respawnLinkedItems[]=
+	{
+		TUO_T_Helmet_Reg,
+		TUO_T_Vest,
+		G_Balaclava_TI_G_blk_F,
+		common,
+		NVGogglesB_grn_F,
+	};
+};
+class B_A_TUO_Grenadier_F:B_A_TUO_Rifleman_F
+{
+	displayName="TUO Grenadier";
+	role="Grenadier";
+	//rank="CORPORAL"
+	weapons[]=
+	{
+		TUO_A_Promet_GL,
+		TUO_4five,
+		Throw,
+		Put,
+		Binocular,
+	};
+	respawnWeapons[]=
+	{
+		TUO_A_Promet_GL,
+		TUO_4five,
+		Throw,
+		Put,
+		Binocular,
+	};
+	magazines[]=
+	{
+		mag_6(30Rnd_65x39_caseless_msbs_mag),
+		mag_6(1Rnd_HE_Grenade_shell),
+		mag_2(1Rnd_SmokeOrange_Grenade_shell),
+		11Rnd_45ACP_Mag,
+		mag_4(SmokeShellOrange),
+	};
+	respawnMagazines[]=
+	{
+		mag_6(30Rnd_65x39_caseless_msbs_mag),
+		mag_6(1Rnd_HE_Grenade_shell),
+		mag_2(1Rnd_SmokeOrange_Grenade_shell),
+		11Rnd_45ACP_Mag,
+		mag_4(SmokeShellOrange),
+	};
+	items[]=
+	{
+		mag_4(FirstAidKit),
+	};
+	respawnItems[]=
+	{
+		mag_4(FirstAidKit),
+	};
+	linkedItems[]=
+	{
+		TUO_A_Helmet_Reg,
+		TUO_A_Vest,
+		G_Balaclava_TI_G_blk_F,
+		common,
+		NVGogglesB_blk_F,
+	};
+	respawnLinkedItems[]=
+	{
+		TUO_A_Helmet_Reg,
+		TUO_A_Vest,
+		G_Balaclava_TI_G_blk_F,
+		common,
+		NVGogglesB_blk_F,
+	};
 };
