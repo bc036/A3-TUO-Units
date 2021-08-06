@@ -5,7 +5,7 @@
 - Invisible Diving Goggles (Diving Contacts)
 - Invisible Rebreather (Rebreather Module)
 - Retextured "Radio Pack" Tropic/Arid Variant
-- Editor Units Tropic/Arid (Spec-ops)
+- Editor Units Tropic/Arid (Spec-ops/Regular)
 ### Regular:
 - Retextured "CTRG Stealth Uniform" Tropic/Arid Variant
 - Retextured "Carrier Light" Tropic/Arid Variant
