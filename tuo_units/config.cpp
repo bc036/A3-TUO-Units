@@ -8,152 +8,223 @@ class CfgPatches
 		{
 			//Spec-Ops OPF_F
 			"O_T_TUO_Operative_F",
-			"O_T_TUO_Operative_AT_F",
-			"O_T_TUO_Operative_DMR_F",
-			"O_T_TUO_Operative_Demo_F",
-			"O_T_TUO_Operative_Medic_F",
-			"O_T_TUO_Operative_Leader_F",
 			"O_A_TUO_Operative_F",
+			"O_W_TUO_Operative_F",
+			"O_T_TUO_Operative_AT_F",
 			"O_A_TUO_Operative_AT_F",
+			"O_W_TUO_Operative_AT_F",
+			"O_T_TUO_Operative_DMR_F",
 			"O_A_TUO_Operative_DMR_F",
+			"O_W_TUO_Operative_DMR_F",
+			"O_T_TUO_Operative_Demo_F",
 			"O_A_TUO_Operative_Demo_F",
+			"O_W_TUO_Operative_Demo_F",
+			"O_T_TUO_Operative_Medic_F",
 			"O_A_TUO_Operative_Medic_F",
+			"O_W_TUO_Operative_Medic_F",
+			"O_T_TUO_Operative_Leader_F",
 			"O_A_TUO_Operative_Leader_F",
+			"O_W_TUO_Operative_Leader_F",
 			//Reg OPF_F
 			"O_T_TUO_Reg_base_F",
-			"O_T_TUO_Rifleman_F",
-			"O_T_TUO_Rifleman_AT_F",
-			"O_T_TUO_Mark_F",
-			"O_T_TUO_Engineer_F",
-			"O_T_TUO_Medic_F",
-			"O_T_TUO_Leader_F",
-			"O_T_TUO_Autorifleman_F",
-			"O_T_TUO_Heavy_Gunner_F",
 			"O_A_TUO_Reg_base_F",
+			"O_W_TUO_Reg_Base_F",
+			"O_T_TUO_Rifleman_F",
 			"O_A_TUO_Rifleman_F",
+			"O_W_TUO_Rifleman_F",
+			"O_T_TUO_Rifleman_AT_F",
 			"O_A_TUO_Rifleman_AT_F",
+			"O_W_TUO_Rifleman_AT_F",
+			"O_T_TUO_Mark_F",
 			"O_A_TUO_Mark_F",
+			"O_W_TUO_Mark_F",
+			"O_T_TUO_Engineer_F",
 			"O_A_TUO_Engineer_F",
+			"O_W_TUO_Engineer_F",
+			"O_T_TUO_Medic_F",
 			"O_A_TUO_Medic_F",
+			"O_W_TUO_Medic_F",
+			"O_T_TUO_Leader_F",
 			"O_A_TUO_Leader_F",
+			"O_W_TUO_Leader_F",
+			"O_T_TUO_Autorifleman_F",
 			"O_A_TUO_Autorifleman_F",
+			"O_W_TUO_Autorifleman_F",
+			"O_T_TUO_Heavy_Gunner_F",
 			"O_A_TUO_Heavy_Gunner_F",
+			"O_W_TUO_Heavy_Gunner_F",
+			"O_T_TUO_Grenadier_F",
+			"O_A_TUO_Grenadier_F",
+			"O_W_TUO_Grenadier_F",
 			//Spec-Ops BLU_F
-			"I_T_TUO_SpecFor_base_F",
-			"I_T_TUO_Operative_F",
-			"I_T_TUO_Operative_AT_F",
-			"I_T_TUO_Operative_DMR_F",
-			"I_T_TUO_Operative_Demo_F",
-			"I_T_TUO_Operative_Medic_F",
-			"I_T_TUO_Operative_Leader_F",
-			"I_T_TUO_Grenadier_F",
-			"I_A_TUO_SpecFor_base_F",
-			"I_A_TUO_Operative_F",
-			"I_A_TUO_Operative_AT_F",
-			"I_A_TUO_Operative_DMR_F",
-			"I_A_TUO_Operative_Demo_F",
-			"I_A_TUO_Operative_Medic_F",
-			"I_A_TUO_Operative_Leader_F",
-			"I_A_TUO_Grenadier_F",
+			"B_T_TUO_SpecFor_base_F",
+			"B_A_TUO_SpecFor_base_F",
+			"B_W_TUO_SpecFor_base_F",
+			"B_T_TUO_Operative_F",
+			"B_A_TUO_Operative_F",
+			"B_W_TUO_Operative_F",
+			"B_T_TUO_Operative_AT_F",
+			"B_A_TUO_Operative_AT_F",
+			"B_W_TUO_Operative_AT_F",
+			"B_T_TUO_Operative_DMR_F",
+			"B_A_TUO_Operative_DMR_F",
+			"B_W_TUO_Operative_DMR_F",
+			"B_T_TUO_Operative_Demo_F",
+			"B_A_TUO_Operative_Demo_F",
+			"B_W_TUO_Operative_Demo_F",
+			"B_T_TUO_Operative_Medic_F",
+			"B_A_TUO_Operative_Medic_F",
+			"B_W_TUO_Operative_Medic_F",
+			"B_T_TUO_Operative_Leader_F",
+			"B_A_TUO_Operative_Leader_F",
+			"B_W_TUO_Operative_Leader_F",
 			//Reg BLU_F
-			"I_T_TUO_Reg_base_F",
-			"I_T_TUO_Rifleman_F",
-			"I_T_TUO_Rifleman_AT_F",
-			"I_T_TUO_Mark_F",
-			"I_T_TUO_Engineer_F",
-			"I_T_TUO_Medic_F",
-			"I_T_TUO_Leader_F",
-			"I_T_TUO_Autorifleman_F",
-			"I_T_TUO_Heavy_Gunner_F",
-			"I_A_TUO_Reg_base_F",
-			"I_A_TUO_Rifleman_F",
-			"I_A_TUO_Rifleman_AT_F",
-			"I_A_TUO_Mark_F",
-			"I_A_TUO_Engineer_F",
-			"I_A_TUO_Medic_F",
-			"I_A_TUO_Leader_F",
-			"I_A_TUO_Autorifleman_F",
-			"I_A_TUO_Heavy_Gunner_F",
+			"B_T_TUO_Reg_base_F",
+			"B_A_TUO_Reg_base_F",
+			"B_W_TUO_Reg_base_F",
+			"B_T_TUO_Rifleman_F",
+			"B_A_TUO_Rifleman_F",
+			"B_W_TUO_Rifleman_F",
+			"B_T_TUO_Rifleman_AT_F",
+			"B_A_TUO_Rifleman_AT_F",
+			"B_W_TUO_Rifleman_AT_F",
+			"B_T_TUO_Mark_F",
+			"B_A_TUO_Mark_F",
+			"B_W_TUO_Mark_F",
+			"B_T_TUO_Engineer_F",
+			"B_A_TUO_Engineer_F",
+			"B_W_TUO_Engineer_F",
+			"B_T_TUO_Medic_F",
+			"B_A_TUO_Medic_F",
+			"B_W_TUO_Medic_F",
+			"B_T_TUO_Leader_F",
+			"B_A_TUO_Leader_F",
+			"B_W_TUO_Leader_F",
+			"B_T_TUO_Autorifleman_F",
+			"B_A_TUO_Autorifleman_F",
+			"B_W_TUO_Autorifleman_F",
+			"B_T_TUO_Heavy_Gunner_F",
+			"B_A_TUO_Heavy_Gunner_F",
+			"B_W_TUO_Heavy_Gunner_F",
+			"B_T_TUO_Grenadier_F",
+			"B_A_TUO_Grenadier_F",
+			"B_W_TUO_Grenadier_F",
 			//Spec-Ops IND_F
 			"I_T_TUO_Operative_F",
-			"I_T_TUO_Operative_AT_F",
-			"I_T_TUO_Operative_DMR_F",
-			"I_T_TUO_Operative_Demo_F",
-			"I_T_TUO_Operative_Medic_F",
-			"I_T_TUO_Operative_Leader_F",
 			"I_A_TUO_Operative_F",
+			"I_W_TUO_Operative_F",
+			"I_T_TUO_Operative_AT_F",
 			"I_A_TUO_Operative_AT_F",
+			"I_W_TUO_Operative_AT_F",
+			"I_T_TUO_Operative_DMR_F",
 			"I_A_TUO_Operative_DMR_F",
+			"I_W_TUO_Operative_DMR_F",
+			"I_T_TUO_Operative_Demo_F",
 			"I_A_TUO_Operative_Demo_F",
+			"I_W_TUO_Operative_Demo_F",
+			"I_T_TUO_Operative_Medic_F",
 			"I_A_TUO_Operative_Medic_F",
+			"I_W_TUO_Operative_Medic_F",
+			"I_T_TUO_Operative_Leader_F",
 			"I_A_TUO_Operative_Leader_F",
+			"I_W_TUO_Operative_Leader_F",
 			//Reg IND_F
 			"I_T_TUO_Reg_base_F",
-			"I_T_TUO_Rifleman_F",
-			"I_T_TUO_Rifleman_AT_F",
-			"I_T_TUO_Mark_F",
-			"I_T_TUO_Engineer_F",
-			"I_T_TUO_Medic_F",
-			"I_T_TUO_Leader_F",
-			"I_T_TUO_Autorifleman_F",
-			"I_T_TUO_Heavy_Gunner_F",
 			"I_A_TUO_Reg_base_F",
+			"I_W_TUO_Reg_Base_F",
+			"I_T_TUO_Rifleman_F",
 			"I_A_TUO_Rifleman_F",
+			"I_W_TUO_Rifleman_F",
+			"I_T_TUO_Rifleman_AT_F",
 			"I_A_TUO_Rifleman_AT_F",
+			"I_W_TUO_Rifleman_AT_F",
+			"I_T_TUO_Mark_F",
 			"I_A_TUO_Mark_F",
+			"I_W_TUO_Mark_F",
+			"I_T_TUO_Engineer_F",
 			"I_A_TUO_Engineer_F",
+			"I_W_TUO_Engineer_F",
+			"I_T_TUO_Medic_F",
 			"I_A_TUO_Medic_F",
+			"I_W_TUO_Medic_F",
+			"I_T_TUO_Leader_F",
 			"I_A_TUO_Leader_F",
+			"I_W_TUO_Leader_F",
+			"I_T_TUO_Autorifleman_F",
 			"I_A_TUO_Autorifleman_F",
+			"I_W_TUO_Autorifleman_F",
+			"I_T_TUO_Heavy_Gunner_F",
 			"I_A_TUO_Heavy_Gunner_F",
+			"I_W_TUO_Heavy_Gunner_F",
+			"I_T_TUO_Grenadier_F",
+			"I_A_TUO_Grenadier_F",
+			"I_W_TUO_Grenadier_F",
 			//Spec-Ops Backpacks
 			"TUO_T_Backpack_SpecOp",
 			"TUO_A_Backpack_SpecOp",
+			"TUO_W_Backpack_SpecOp",
 			"TUO_T_Backpack_Operative",
 			"TUO_A_Backpack_Operative",
 			"TUO_T_Backpack_SpecOp_AT",
 			"TUO_A_Backpack_SpecOp_AT",
+			"TUO_W_Backpack_SpecOp_AT",
 			"TUO_T_Backpack_SpecOp_Demo",
 			"TUO_A_Backpack_SpecOp_Demo",
+			"TUO_W_Backpack_SpecOp_Demo",
 			"TUO_T_Backpack_SpecOp_Medic",
 			"TUO_A_Backpack_SpecOp_Medic",
+			"TUO_W_Backpack_SpecOp_Medic",
 			"TUO_T_Backpack_Operative_Leader",
 			"TUO_A_Backpack_Operative_Leader",
+			"TUO_W_Backpack_Operative_Leader",
 			"TUO_Extra_Pockets",
 			//Reg Backpacks
 			"TUO_T_Backpack_Assault",
 			"TUO_A_Backpack_Assault",
+			"TUO_W_Backpack_Assault",
 			"TUO_T_Backpack_Assault_AT",
 			"TUO_A_Backpack_Assault_AT",
+			"TUO_W_Backpack_Assault_AT",
 			"TUO_T_Backpack_Assault_Demo",
 			"TUO_A_Backpack_Assault_Demo",
+			"TUO_W_Backpack_Assault_Demo",
 			"TUO_T_Backpack_Assault_Medic",
 			"TUO_A_Backpack_Assault_Medic",
+			"TUO_W_Backpack_Assault_Medic",
 			"TUO_T_Backpack_Kitbag",
 			"TUO_A_Backpack_Kitbag",
+			"TUO_W_Backpack_Kitbag",
 			"TUO_T_Backpack_Radiopack",
 			"TUO_A_Backpack_Radiopack",
+			"TUO_W_Backpack_Radiopack",
 			"TUO_T_Backpack_Radiopack_Leader",
+			"TUO_A_Backpack_Radiopack_Leader",
+			"TUO_W_Backpack_Radiopack_Leader",
 		};
 		weapons[]= 
 		{
 			//Spec-Ops Helmets
 			"TUO_T_Helmet_SpecOp",
 			"TUO_A_Helmet_SpecOp",
+			"TUO_W_Helmet_SpecOp",
 			//Reg Helments
 			"TUO_T_Helmet_Reg",
 			"TUO_A_Helmet_Reg",
+			"TUO_W_Helmet_Reg",
 			//Spec-Ops Uniforms
 			"TUO_T_Uniform_SpecOp",
 			"TUO_A_Uniform_SpecOp",
+			"TUO_W_Uniform_SpecOp",
 			//Reg Uniforms
 			"TUO_T_Uniform_Reg",
 			"TUO_A_Uniform_Reg",
+			"TUO_W_Uniform_Reg",
 			//Spec-Ops Vests
 			"TUO_Rebreather_Module",
 			//Reg Vests
 			"TUO_T_Vest",
 			"TUO_A_Vest",
+			"TUO_W_Vest",
 			//Primary
 			"TUO_T_Promet",
 			"TUO_T_Promet_snds",
@@ -174,8 +245,8 @@ class CfgPatches
 			"TUO_T_MRAWS",
 			"TUO_A_MRAWS",
 		};
-		version=0.4.1;
-		requiredVersion=0.4.1;
+		version=0.5;
+		requiredVersion=0.5;
 		requiredAddons[]= 
 		{
 			"A3_Characters_F",
@@ -195,7 +266,7 @@ class CfgMods
 	{
 		dir="@TUO Units";
 		name="TUO";
-		tooltip="TUO v0.31-alpha";
+		tooltip="TUO v0.5-beta";
 		overview="Trans-Universe Operations (TUO) PMC"
 		picture="\tuo_units\Data\ui\tuo_logo.paa";
 		logo="\tuo_units\Data\ui\tuo_logo.paa";
@@ -230,6 +301,14 @@ class CfgFactionClasses
 		priority=1;
 		side=0; //OPF_F=0, BLU_F=1, IND_F=2
 	};
+	class TUO_W_OPF_F
+	{
+		displayName="TUO (Woodland)";
+		icon="\tuo_units\Data\tuo_logo.paa";
+		flag="\tuo_units\Data\tuo_logo.paa";
+		priority=1;
+		side=0; //OPF_F=0, BLU_F=1, IND_F=2
+	}; 
 	class TUO_T_BLU_F
 	{
 		displayName="TUO (Tropic)";
@@ -246,6 +325,14 @@ class CfgFactionClasses
 		priority=1;
 		side=1; //OPF_F=0, BLU_F=1, IND_F=2
 	};
+	class TUO_W_BLU_F
+	{
+		displayName="TUO (Woodland)";
+		icon="\tuo_units\Data\tuo_logo.paa";
+		flag="\tuo_units\Data\tuo_logo.paa";
+		priority=1;
+		side=1; //OPF_F=0, BLU_F=1, IND_F=2
+	};
 	class TUO_T_IND_F
 	{
 		displayName="TUO (Tropic)";
@@ -257,6 +344,14 @@ class CfgFactionClasses
 	class TUO_A_IND_F
 	{
 		displayName="TUO (Arid)";
+		icon="\tuo_units\Data\tuo_logo.paa";
+		flag="\tuo_units\Data\tuo_logo.paa";
+		priority=1;
+		side=2; //OPF_F=0, BLU_F=1, IND_F=2
+	};
+	class TUO_W_IND_F
+	{
+		displayName="TUO (Woodland)";
 		icon="\tuo_units\Data\tuo_logo.paa";
 		flag="\tuo_units\Data\tuo_logo.paa";
 		priority=1;

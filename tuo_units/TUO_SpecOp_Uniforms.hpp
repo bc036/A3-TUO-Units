@@ -58,6 +58,18 @@
 			"tuo_units\Data\TUO Uniform\SpecOps Headgear\Tex\tuo_a_helmet_specop.paa"
 		};
 	};
+	class TUO_W_Helmet_SpecOp:TUO_T_Helmet_SpecOp
+	{
+		displayName="TUO Spec-Ops Helmet Woodland";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"tuo_units\Data\TUO Uniform\SpecOps Headgear\Tex\tuo_w_helmet_specop.paa"
+		};
+	};
 	class U_O_V_Soldier_Viper_F;
 	class TUO_T_Uniform_SpecOp:U_O_V_Soldier_Viper_F
 	{
@@ -96,6 +108,25 @@
 		{
 			uniformModel="-";
 			uniformClass="B_A_TUO_SpecFor_base_F";
+			containerClass="Supply20";
+			mass=120;
+		};
+	};
+	class TUO_W_Uniform_SpecOp:TUO_T_Uniform_SpecOp
+	{
+		displayName="TUO Spec-Ops Uniform Woodland";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"tuo_units\Data\TUO Uniform\SpecOps Suit\Tex\tuo_w_uniform_specop.paa"
+		};
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="B_W_TUO_SpecFor_base_F";
 			containerClass="Supply20";
 			mass=120;
 		};

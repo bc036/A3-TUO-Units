@@ -42,6 +42,14 @@
 			"\tuo_units\Data\TUO Uniform\SpecOps Backpack\Tex\tuo_a_backpack_specop.paa"
 		};
 	};
+	class TUO_W_Backpack_SpecOp:TUO_T_Backpack_SpecOp
+	{
+		displayName="TUO Spec-Ops Backpack Woodland";
+		hiddenSelectionsTextures[]=
+		{
+			"\tuo_units\Data\TUO Uniform\SpecOps Backpack\Tex\tuo_w_backpack_specop.paa"
+		};
+	};
 	class B_RadioBag_01_black_F;
 	class TUO_T_Backpack_Radiopack:B_RadioBag_01_black_F
 	{
@@ -58,6 +66,14 @@
 		hiddenSelectionsTextures[]=
 		{
 			"\tuo_units\Data\TUO Uniform\Radio Pack\Tex\tuo_a_radiopack.paa"
+		};
+	};
+	class TUO_W_Backpack_Radiopack:TUO_T_Backpack_Radiopack
+	{
+		displayName="TUO Radiopack Arid";
+		hiddenSelectionsTextures[]=
+		{
+			"\tuo_units\Data\TUO Uniform\Radio Pack\Tex\tuo_w_radiopack.paa"
 		};
 	};
 //Spec-Ops Specialized
@@ -110,6 +126,14 @@
 			{
 				magazine="SmokeShellOrange";
 				count=4;
+			};
+			class TransportItems
+			{
+				class _xx_FirstAidKit
+				{
+					name="FirstAidKit";
+					count=4;
+				};
 			};
 		};
 	};
@@ -169,6 +193,45 @@
 			class _xx_SmokeShellOrange
 			{
 				magazine="SmokeShellOrange";
+				count=2;
+			};
+			class _xx_SmokeShellRed
+			{
+				magazine="SmokeShellRed";
+				count=2;
+			};
+			class _xx_B_IR_Grenade
+			{
+				magazine="B_IR_Grenade";
+				count=1;
+			};
+		};
+		class TransportItems
+		{
+			class _xx_FirstAidKit
+			{
+				name="FirstAidKit";
+				count=4;
+			};
+		};		
+	};
+	class TUO_W_Backpack_Operative_Leader:TUO_W_Backpack_Radiopack
+	{
+		class TransportMagazines
+		{
+			class _xx_30Rnd_65x39_caseless_msbs_mag
+			{
+				magazine="30Rnd_65x39_caseless_msbs_mag";
+				count=4;
+			};
+			class _xx_Chemlight_red
+			{
+				magazine="Chemlight_red";
+				count=2;
+			};
+			class _xx_SmokeShellGreen
+			{
+				magazine="SmokeShellGreen";
 				count=2;
 			};
 			class _xx_SmokeShellRed
@@ -251,6 +314,42 @@
 			class _xx_SmokeShellOrange
 			{
 				magazine="SmokeShellOrange";
+				count=4;
+			};
+		};
+		class TransportItems
+		{
+			class _xx_FirstAidKit
+			{
+				name="FirstAidKit";
+				count=4;
+			};
+		};		
+	};
+	class TUO_W_Backpack_SpecOp_AT:TUO_W_Backpack_SpecOp
+	{
+		scope=1; //private=0, protected=1, public=2
+		scopeCurator=1; //private=0, protected=1, public=2
+		class TransportMagazines
+		{
+			class _xx_30Rnd_65x39_caseless_msbs_mag
+			{
+				magazine="30Rnd_65x39_caseless_msbs_mag";
+				count=2;
+			};
+			class _xx_MRAWS_HEAT_F
+			{
+				magazine="MRAWS_HEAT_F";
+				count=2;
+			};
+			class _xx_Chemlight_red
+			{
+				magazine="Chemlight_red";
+				count=2;
+			};
+			class _xx_SmokeShellGreen
+			{
+				magazine="SmokeShellGreen";
 				count=4;
 			};
 		};
@@ -355,6 +454,52 @@
 			};
 		};		
 	};
+	class TUO_W_Backpack_SpecOp_Demo:TUO_W_Backpack_SpecOp
+	{
+		scope=1; //private=0, protected=1, public=2
+		scopeCurator=1; //private=0, protected=1, public=2
+		class TransportMagazines
+		{
+			class _xx_30Rnd_65x39_caseless_msbs_mag
+			{
+				magazine="30Rnd_65x39_caseless_msbs_mag";
+				count=4;
+			};
+			class _xx_Chemlight_red
+			{
+				magazine="Chemlight_red";
+				count=2;
+			};
+			class _xx_SmokeShellGreen
+			{
+				magazine="SmokeShellGreen";
+				count=4;
+			};
+			class _xx_DemoCharge_Remote_Mag
+			{
+				magazine="DemoCharge_Remote_Mag";
+				count=1;
+			};
+		};
+		class TransportItems
+		{
+			class _xx_FirstAidKit
+			{
+				name="FirstAidKit";
+				count=4;
+			};
+			class _xx_ToolKit
+			{
+				name="ToolKit";
+				count=1;
+			};
+			class _xx_MineDetector
+			{
+				name="MineDetector";
+				count=1;
+			};
+		};		
+	};
 	class TUO_T_Backpack_SpecOp_Medic:TUO_T_Backpack_SpecOp
 	{
 		scope=1; //private=0, protected=1, public=2
@@ -427,6 +572,42 @@
 			};
 		};		
 	};
+	class TUO_W_Backpack_SpecOp_Medic:TUO_W_Backpack_SpecOp
+	{
+		scope=1; //private=0, protected=1, public=2
+		scopeCurator=1; //private=0, protected=1, public=2
+		class TransportMagazines
+		{
+			class _xx_30Rnd_65x39_caseless_msbs_mag
+			{
+				magazine="30Rnd_65x39_caseless_msbs_mag";
+				count=4;
+			};
+			class _xx_Chemlight_red
+			{
+				magazine="Chemlight_red";
+				count=2;
+			};
+			class _xx_SmokeShellGreen
+			{
+				magazine="SmokeShellGreen";
+				count=8;
+			};
+		};
+		class TransportItems
+		{
+			class _xx_FirstAidKit
+			{
+				name="FirstAidKit";
+				count=10;
+			};
+			class _xx_Medikit
+			{
+				name="Medikit";
+				count=1;
+			};
+		};		
+	};
 //Regular Base
 	class B_AssaultPack_blk;
 	class TUO_T_Backpack_Assault:B_AssaultPack_blk
@@ -444,6 +625,14 @@
 		hiddenSelectionsTextures[]=
 		{
 			"\tuo_units\Data\TUO Uniform\Reg Backpack\Tex\tuo_a_assault_backpack.paa"
+		};
+	};
+	class TUO_W_Backpack_Assault:TUO_T_Backpack_Assault
+	{
+		displayName="TUO Assault Pack Woodland";
+		hiddenSelectionsTextures[]=
+		{
+			"\tuo_units\Data\TUO Uniform\Reg Backpack\Tex\tuo_w_assault_backpack.paa"
 		};
 	};
 	class B_Kitbag_rgr;
@@ -464,6 +653,14 @@
 			"\tuo_units\Data\TUO Uniform\Reg Backpack\Tex\tuo_a_kitbag.paa"
 		};
 	};
+	class TUO_W_Backpack_Kitbag:TUO_T_Backpack_Kitbag
+	{
+		displayName="TUO Kitbag Woodland";
+		hiddenSelectionsTextures[]=
+		{
+			"\tuo_units\Data\TUO Uniform\Reg Backpack\Tex\tuo_w_kitbag.paa"
+		};
+	};
 //Regular Specialized
 	class TUO_T_Backpack_Assault_AT:TUO_T_Backpack_Assault
 	{
@@ -479,6 +676,19 @@
 		};
 	};
 	class TUO_A_Backpack_Assault_AT:TUO_A_Backpack_Assault
+	{
+		scope=1; //private=0, protected=1, public=2
+		scopeCurator=1; //private=0, protected=1, public=2
+		class TransportMagazines
+		{
+			class _xx_MRAWS_HEAT_F
+			{
+				magazine="MRAWS_HEAT_F";
+				count=2;
+			};
+		};
+	};
+	class TUO_W_Backpack_Assault_AT:TUO_W_Backpack_Assault
 	{
 		scope=1; //private=0, protected=1, public=2
 		scopeCurator=1; //private=0, protected=1, public=2
@@ -543,6 +753,32 @@
 			};
 		};	
 	};
+	class TUO_W_Backpack_Assault_Demo:TUO_W_Backpack_Assault
+	{
+		scope=1; //private=0, protected=1, public=2
+		scopeCurator=1; //private=0, protected=1, public=2
+		class TransportMagazines
+		{
+			class _xx_DemoCharge_Remote_Mag
+			{
+				magazine="DemoCharge_Remote_Mag";
+				count=1;
+			};
+		};
+		class TransportItems
+		{
+			class _xx_ToolKit
+			{
+				name="ToolKit";
+				count=1;
+			};
+			class _xx_MineDetector
+			{
+				name="MineDetector";
+				count=1;
+			};
+		};		
+	};
 	class TUO_T_Backpack_Assault_Medic:TUO_T_Backpack_Assault
 	{
 		scope=1; //private=0, protected=1, public=2
@@ -579,6 +815,24 @@
 			};
 		};	
 	}; 
+	class TUO_W_Backpack_Assault_Medic:TUO_W_Backpack_Assault
+	{
+		scope=1; //private=0, protected=1, public=2
+		scopeCurator=1; //private=0, protected=1, public=2
+		class TransportItems
+		{
+			class _xx_FirstAidKit
+			{
+				name="FirstAidKit";
+				count=10;
+			};
+			class _xx_Medikit
+			{
+				name="Medikit";
+				count=1;
+			};
+		};	
+	};
 	class TUO_T_Backpack_Radiopack_Leader:TUO_T_Backpack_Radiopack
 	{
 		scope=1; //private=0, protected=1, public=2
@@ -603,6 +857,29 @@
 		};
 	};
 	class TUO_A_Backpack_Radiopack_Leader:TUO_A_Backpack_Radiopack
+	{
+		scope=1; //private=0, protected=1, public=2
+		scopeCurator=1; //private=0, protected=1, public=2
+		class TransportMagazines
+		{
+			class _xx_Chemlight_red
+			{
+				magazine="Chemlight_red";
+				count=2;
+			};
+			class _xx_SmokeShellRed
+			{
+				magazine="SmokeShellRed";
+				count=2;
+			};
+			class _xx_B_IR_Grenade
+			{
+				magazine="B_IR_Grenade";
+				count=1;
+			};
+		};
+	};
+	class TUO_W_Backpack_Radiopack_Leader:TUO_W_Backpack_Radiopack
 	{
 		scope=1; //private=0, protected=1, public=2
 		scopeCurator=1; //private=0, protected=1, public=2

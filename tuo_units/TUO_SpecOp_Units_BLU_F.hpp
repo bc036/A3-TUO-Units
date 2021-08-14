@@ -153,6 +153,61 @@ class B_T_TUO_SpecFor_base_F:B_Soldier_base_F
 			common
 		};
 	};
+	class B_W_TUO_SpecFor_base_F:B_T_TUO_SpecFor_base_F
+	{
+		uniformClass="TUO_W_Uniform_SpecOp";
+		backpack="TUO_W_Backpack_SpecOp";
+		_generalMacro="TUO_SpecOps_base_Woodland";
+		faction="TUO_W_BLU_F";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"tuo_units\Data\TUO Uniform\SpecOps Suit\Tex\TUO_W_Uniform_SpecOp.paa"
+		};
+		weapons[]=
+		{
+			TUO_T_Promet_snds,
+			Throw,
+			Put,
+			Laserdesignator_03,
+		};
+		respawnWeapons[]=
+		{
+			TUO_T_Promet_snds,
+			Throw,
+			Put,
+			Laserdesignator_03,
+		};
+		magazines[]=
+		{
+			30Rnd_65x39_caseless_msbs_mag,
+			Laserbatteries,
+		};
+		respawnMagazines[]=
+		{
+			30Rnd_65x39_caseless_msbs_mag,
+			Laserbatteries,
+		};
+		items[]={};
+		respawnItems[]={};
+		linkedItems[]=
+		{
+			TUO_W_Helmet_SpecOp,
+			TUO_Diving_Contacts,
+			TUO_Rebreather_Module,
+			common
+		};
+		respawnLinkedItems[]=
+		{
+			TUO_W_Helmet_SpecOp,
+			TUO_Diving_Contacts,
+			TUO_Rebreather_Module,
+			common
+		};
+	};
 	class B_T_TUO_Operative_F:B_T_TUO_SpecFor_base_F
 	{
 		scope=2; //private=0, protected=1, public=2
@@ -164,6 +219,16 @@ class B_T_TUO_SpecFor_base_F:B_Soldier_base_F
 		//rank="PRIVATE"
 	};
 	class B_A_TUO_Operative_F:B_A_TUO_SpecFor_base_F
+	{
+		scope=2; //private=0, protected=1, public=2
+		scopeArsenal=2; //private=0, protected=1, public=2
+		scopeCurator=2; //private=0, protected=1, public=2
+		displayName="TUO Operative";
+		backpack="TUO_A_Backpack_Operative";
+		role="SpecialOperative";
+		//rank="PRIVATE"
+	};
+	class B_W_TUO_Operative_F:B_W_TUO_SpecFor_base_F
 	{
 		scope=2; //private=0, protected=1, public=2
 		scopeArsenal=2; //private=0, protected=1, public=2
@@ -243,6 +308,41 @@ class B_T_TUO_SpecFor_base_F:B_Soldier_base_F
 			Laserbatteries,
 		};
 	};
+	class B_W_TUO_Operative_AT_F:B_W_TUO_Operative_F
+	{
+		displayName="TUO Operative (AT)";
+		icon="iconManAT";
+		backpack="TUO_W_Backpack_SpecOp_AT";
+		//rank="PRIVATE"
+		weapons[]=
+		{
+			TUO_T_Promet_snds,
+			TUO_T_MRAWS,
+			Throw,
+			Put,
+			Laserdesignator_03,
+		};
+		respawnWeapons[]=
+		{
+			TUO_T_Promet_snds,
+			TUO_T_MRAWS,
+			Throw,
+			Put,
+			Laserdesignator_03,
+		};
+		magazines[]=
+		{
+			30Rnd_65x39_caseless_msbs_mag,
+			MRAWS_HEAT_F,
+			Laserbatteries,
+		};
+		respawnMagazines[]=
+		{
+			30Rnd_65x39_caseless_msbs_mag,
+			MRAWS_HEAT_F,
+			Laserbatteries,
+		};
+	};
 	class B_T_TUO_Operative_DMR_F:B_T_TUO_Operative_F
 	{
 		displayName="TUO Operative (DMR)";
@@ -305,6 +405,37 @@ class B_T_TUO_SpecFor_base_F:B_Soldier_base_F
 			Laserbatteries,
 		};
 	};
+	class B_W_TUO_Operative_DMR_F:B_W_TUO_Operative_F
+	{
+		displayName="TUO Operative (DMR)";
+		icon="iconMan";
+		role="Marksman";
+		//rank="PRIVATE"
+		weapons[]=
+		{
+			TUO_T_Promet_DMR_snds,
+			Throw,
+			Put,
+			Laserdesignator_03,
+		};
+		respawnWeapons[]=
+		{
+			TUO_T_Promet_DMR_snds,
+			Throw,
+			Put,
+			Laserdesignator_03,
+		};
+		magazines[]=
+		{
+			30Rnd_65x39_caseless_msbs_mag,
+			Laserbatteries,
+		};
+		respawnMagazines[]=
+		{
+			30Rnd_65x39_caseless_msbs_mag,
+			Laserbatteries,
+		};
+	};
 	class B_T_TUO_Operative_Demo_F:B_T_TUO_Operative_F
 	{
 		displayName="TUO Operative (Demo)";
@@ -320,6 +451,16 @@ class B_T_TUO_SpecFor_base_F:B_Soldier_base_F
 		displayName="TUO Operative (Demo)";
 		icon="iconManEngineer";
 		backpack="TUO_A_Backpack_SpecOp_Demo";
+		engineer=1;
+		canDeactivateMines=1;
+		picture = "pictureExplosive";
+		//rank="CORPORAL"
+	};
+	class B_W_TUO_Operative_Demo_F:B_W_TUO_Operative_F
+	{
+		displayName="TUO Operative (Demo)";
+		icon="iconManEngineer";
+		backpack="TUO_W_Backpack_SpecOp_Demo";
 		engineer=1;
 		canDeactivateMines=1;
 		picture = "pictureExplosive";
@@ -343,6 +484,15 @@ class B_T_TUO_SpecFor_base_F:B_Soldier_base_F
 		picture = "pictureHeal";
 		//rank="CORPORAL"
 	};
+	class B_W_TUO_Operative_Medic_F:B_W_TUO_Operative_F
+	{
+		displayName="TUO Operative (Medic)";
+		icon="iconManMedic";
+		backpack="TUO_W_Backpack_SpecOp_Medic";
+		attendant=1;
+		picture = "pictureHeal";
+		//rank="CORPORAL"
+	};
 	class B_T_TUO_Operative_Leader_F:B_T_TUO_Operative_F
 	{
 		displayName="TUO Operative (Leader)";
@@ -355,5 +505,12 @@ class B_T_TUO_SpecFor_base_F:B_Soldier_base_F
 		displayName="TUO Operative (Leader)";
 		icon="iconManLeader";
 		backpack="TUO_A_Backpack_Operative_Leader";
+		//rank="SERGEANT"
+	};
+	class B_W_TUO_Operative_Leader_F:B_W_TUO_Operative_F
+	{
+		displayName="TUO Operative (Leader)";
+		icon="iconManLeader";
+		backpack="TUO_W_Backpack_Operative_Leader";
 		//rank="SERGEANT"
 	};
