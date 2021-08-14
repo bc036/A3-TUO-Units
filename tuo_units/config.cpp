@@ -174,8 +174,8 @@ class CfgPatches
 			"TUO_T_MRAWS",
 			"TUO_A_MRAWS",
 		};
-		version=0.4;
-		requiredVersion=0.4;
+		version=0.4.1;
+		requiredVersion=0.4.1;
 		requiredAddons[]= 
 		{
 			"A3_Characters_F",
