@@ -116,7 +116,7 @@
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"P:\tuo_units\Data\TUO Uniform\Reg Vest\Tex\tuo_t_vest_reg"
+			"P:\tuo_units\Data\TUO Uniform\Reg Vest\Tex\tuo_t_vest_reg.paa"
 		};
 	};
 	class TUO_A_Vest:TUO_T_Vest
@@ -128,7 +128,7 @@
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"P:\tuo_units\Data\TUO Uniform\Reg Vest\Tex\tuo_a_vest_reg"
+			"P:\tuo_units\Data\TUO Uniform\Reg Vest\Tex\tuo_a_vest_reg.paa"
 		};
 	};
 	class TUO_W_Vest:TUO_T_Vest
@@ -140,6 +140,6 @@
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"P:\tuo_units\Data\TUO Uniform\Reg Vest\Tex\tuo_w_vest_reg"
+			"P:\tuo_units\Data\TUO Uniform\Reg Vest\Tex\tuo_w_vest_reg.paa"
 		};
 	};
